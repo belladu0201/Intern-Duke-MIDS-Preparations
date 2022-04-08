@@ -18,3 +18,12 @@ Data Science Dialogues (IDS 791) |
 MIDS Workshop (IDS 898) |
 Capstone Project (IDS 798) |
 Practical Data Science (IDS 720) | https://www.practicaldatascience.org/html/index.html
+
+Electives     | Resources
+------------- | -------------
+ECE 551: Programming, Data Structures, and Algorithms in C++ |
+ECE 682D: Probabilistic Machine Learning |
+STA 601: Bayesian Methods and Modern Statistics |
+BIOSTAT 713: Survival Analysis |
+BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
+
