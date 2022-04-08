@@ -236,3 +236,16 @@ def diagonalDifference(arr):
     return abs(abs_right-abs_left)
 
 # Q5
+def countingSort(arr):
+    # Write your code here
+    col = len(arr) # 5
+    row = max(arr) + 1
+    #len(set(arr)) # 4
+    temp = [0 for i in range(row)]
+    for i in arr:
+        #print([i,len(temp)])
+        # i = 1, index 1 += 1
+        temp[i] += 1
+        #print([i,temp[i-1]])
+        #output.append(temp)
+    return temp
