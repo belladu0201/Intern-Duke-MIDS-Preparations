@@ -33,3 +33,8 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 * Python and R basics
 * SQL
 * Case studies and presentation skills
+
+# Key Terms Appeared in Data Analyst Job Roles
+* QL Server, Microsoft Excel, Microsoft Power BI(PowerPoint Visio, Power Automate, PowerApps)
+* Excellent oral, written and communication skills
+* A strong business sense
