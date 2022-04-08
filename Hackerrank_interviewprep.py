@@ -121,3 +121,50 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+
+    # Q6
+def matchingStrings(strings, queries):
+    # Write your code here
+    output = []
+    for i in queries:
+        output.append(strings.count(i))
+    return output
+    # Dictionary doesn't work here because the keys can't be duplicates
+    # counter = {}
+    # for i in queries:
+    #     for j in strings:
+    #         if i == j:
+    #             if i not in counter:
+    #                 counter[i] = 1
+    #             else:
+    #                 counter[i] += 1
+    #     if i not in strings:
+    #         counter[i] = 0
+    # return list(counter.values())
+            
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    strings_count = int(input().strip())
+
+    strings = []
+
+    for _ in range(strings_count):
+        strings_item = input()
+        strings.append(strings_item)
+
+    queries_count = int(input().strip())
+
+    queries = []
+
+    for _ in range(queries_count):
+        queries_item = input()
+        queries.append(queries_item)
+
+    res = matchingStrings(strings, queries)
+
+    fptr.write('\n'.join(map(str, res)))
+    fptr.write('\n')
+
+    fptr.close()
