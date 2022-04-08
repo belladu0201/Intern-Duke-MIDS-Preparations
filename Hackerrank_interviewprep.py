@@ -168,3 +168,11 @@ if __name__ == '__main__':
     fptr.write('\n')
 
     fptr.close()
+    
+# Wk2 Q1 eaz
+def lonelyinteger(a):
+    # Write your code here
+    temp = list(set(a))
+    for i in temp:
+        if a.count(i) == 1:
+            return i
