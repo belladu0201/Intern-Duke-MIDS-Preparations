@@ -27,3 +27,9 @@ STA 601: Bayesian Methods and Modern Statistics |
 BIOSTAT 713: Survival Analysis |
 BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 
+## Data Science/Analytics Skills
+* Linear Algebra
+* Probability and Statistics
+* Python and R basics
+* SQL
+* Case studies and presentation skills
