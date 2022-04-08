@@ -234,3 +234,5 @@ def diagonalDifference(arr):
         left.append(arr[i][row-i-1])
     abs_left = sum(left)
     return abs(abs_right-abs_left)
+
+# Q5
