@@ -36,5 +36,9 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 
 # Key Terms Appeared in Data Analyst Job Roles
 * SQL Server, Microsoft Excel, Microsoft Power BI(PowerPoint Visio, Power Automate, PowerApps)
+* Relational Cloud Based Databases (Redshift, Snowflake), DataWarehouse and Big Data Platforms (Google Big Query)
 * Excellent oral, written and communication skills
+* Google Analytics, Data Visualization Tools(Data Studio, Looker, Tableau, RShiny, D3)
+* Designing and evaluating A/B tests
 * A strong business sense
+* Data stack (AWS)
