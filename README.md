@@ -7,8 +7,6 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 
 Courses       | Resources
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
 Data Engineering Systems (IDS 706)
 Introduction to Natural Language Processing (IDS 703)
 Modeling and Representation of Data (IDS 702)
