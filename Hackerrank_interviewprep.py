@@ -212,3 +212,25 @@ def gradingStudents(grades):
     # return grades 
     
     
+# Q3
+# Q4
+def diagonalDifference(arr):
+    # Write your code here
+    # squre matrix: row == column
+    right,left = [],[]
+    row = len(arr[0])
+    col = len(arr)
+    for i in range(len(arr)):
+        col += 1
+        for j in range(len(arr[i])):
+            if i == j:
+                right.append(arr[i][j])
+    abs_right = sum(right)
+    # 0 2; 1;1; 2 0 
+    for i in range(row):
+        # 0 4; 1 3; 2 2; 3 1; 4 0
+        # [0,3],[1,2]
+        #print([i,row-i])
+        left.append(arr[i][row-i-1])
+    abs_left = sum(left)
+    return abs(abs_right-abs_left)
