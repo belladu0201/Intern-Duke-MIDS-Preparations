@@ -176,3 +176,39 @@ def lonelyinteger(a):
     for i in temp:
         if a.count(i) == 1:
             return i
+
+        # Wk2 Q2 brain not working
+def gradingStudents(grades):
+    # Write your code here
+    #multiple_5 = [i for i in range(40,101) if i%5 == 0]
+    output_grade = []
+    for i in (grades):
+        if i < 38:
+            output_grade.append(i)
+        else:
+            temp = [k for k in range(i,101) if k % 5 == 0]
+            diff = temp[0] - i
+            #print(diff)
+            #print([i,temp[0]])
+#2
+# [73, 75]
+# 3
+# [67, 70]
+            if diff < 3:
+                output_grade.append(temp[0])
+            else:
+                output_grade.append(i)
+            # if 0 < diff < 3:
+            #     output_grade.append(temp[0])
+            # output_grade.append(i)
+    grades = output_grade
+    return grades
+            
+    # if grades < 40:
+    #     return grades
+    # for i in multiple_5:
+    #     if 0 <= i - grades < 3:
+    #         return i-grades
+    # return grades 
+    
+    
