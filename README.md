@@ -47,6 +47,6 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 Location | Fall 2022 Schedule    | Courses
 ------------- | ------------ | ------------
 
-Gross Hall 103| TuTh 10:15 - 11:30| Introduction to Natural Language Processing (IDS 703)
+Gross Hall 103 | TuTh 10:15 - 11:30 | Introduction to Natural Language Processing (IDS 703)
 
-Gross Hall 103| MW 13:45 - 15:00| Data Engineering Systems (IDS 706)
+Gross Hall 103 | MW 13:45 - 15:00 | Data Engineering Systems (IDS 706)
