@@ -8,7 +8,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 Required Courses       | Resources
 ------------- | -------------
 Data Engineering Systems (IDS 706) |
-Introduction to Natural Language Processing (IDS 703) |
+Introduction to Natural Language Processing (IDS 703) | https://cbail.github.io/ids704/Home.html
 Modeling and Representation of Data (IDS 702) |
 Unifying Data Science (IDS 701) |
 Principles of Machine Learning (IDS 705) | https://kylebradbury.github.io/ids705_sp2019/
