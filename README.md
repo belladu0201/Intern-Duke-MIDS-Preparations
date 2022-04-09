@@ -44,9 +44,9 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 * Data stack (AWS)
 
 ## Two Year Plan @Duke MIDS
-Location | Fall 2022 Schedule| Courses | Units
-------------- | ------------ | ------------ | ------------
-Gross Hall 103 | TuTh 10:15 - 11:30 | Introduction to Natural Language Processing (IDS 703) | 3 units
+Location | Fall 2022 Schedule| Courses | Units | Websites/Resources
+------------- | ------------ | ------------ | ------------ | ------------
+Gross Hall 103 | TuTh 10:15 - 11:30 | Introduction to Natural Language Processing (IDS 703) | 3 units | https://github.com/cbail/ids704
 Gross Hall 103 | MW 13:45 - 15:00 | Data Engineering Systems (IDS 706) | 3 units
 Gross Hall 270 | TuTh 13:45 - 15:00 | Practicing Data Science: Tools (IDS 720) | 3 units
 Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Workshop (IDS 898) | 0.5 unit
