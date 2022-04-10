@@ -43,3 +43,27 @@ class Solution:
         print(output)
 
         #return (max(diff))
+################################################## Right Answer using recursion
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        def find_re(s):
+            if len(s) == 1:
+                return 1
+            if len(s) == 0:
+                return 0
+            temp = {}
+            repeated = []
+            count = 0
+            start_idx = 0
+            for i, elem in enumerate(s):
+                start_idx = i
+                if elem not in temp:
+                    temp[elem] = 1
+                else:
+                    count += 1
+                    repeated.append(elem) # key that repeated
+                    break
+            if count == 0:
+                return len(s)
+            return max(start_idx,find_re(s[1:]))
+        return find_re(s)
