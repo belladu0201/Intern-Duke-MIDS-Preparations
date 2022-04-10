@@ -277,3 +277,17 @@ def marsExploration(s):
         if e != goal[i]:
             wrong_count +=1
     return wrong_count + marsExploration(s[3:])
+
+
+# WK3 Problems
+# Q1: really don't think I can it right, but passes all the tests ...
+def twoArrays(k, A, B):
+    # Write your code here
+    A.sort()
+    B.sort()
+    B = B[::-1]
+    for i in range(len(A)):
+        if B[i] + A[i] <k:
+            return "NO"
+    return "YES"
+# 
