@@ -303,3 +303,20 @@ def birthday(s, d, m):
             print(all_sum)
             all_sum.append(s[i:i+m])
     return len(all_sum)
+# Q3
+def sockMerchant(n, ar):
+    # Write your code here
+    pairs = {}
+    for i in ar:
+        if i not in pairs:
+            pairs[i] = 1
+        else:
+            pairs[i] += 1
+    output = []
+    print(pairs)
+    for k,v in pairs.items():
+        # 10 20 20 10 10 30 50 10 20
+        # {10: 4, 20: 3, 30: 1, 50: 1}
+        if v % 2 != 0:
+            pairs[k] -= 1
+    return sum(pairs.values())//2
