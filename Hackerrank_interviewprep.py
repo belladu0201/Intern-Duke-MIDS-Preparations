@@ -249,3 +249,31 @@ def countingSort(arr):
         #print([i,temp[i-1]])
         #output.append(temp)
     return temp
+
+# Q6
+def pangrams(s):
+    # Write your code here
+    s = s.lower()
+    letter = {}
+    for i in s:
+        if i not in letter:
+            letter[i] = 1
+        else:
+            letter[i] += 1
+    print(letter)
+    if len(letter.keys()) == 27: #inclduing the space
+        return "pangram"
+    return "not pangram"
+
+# Q7
+def marsExploration(s):
+    # Write your code here
+    # 012 345 678 91011
+    wrong_count = 0
+    if len(s) == 0:
+        return wrong_count
+    goal = ["S","O","S"]
+    for i,e in enumerate(s[:3]):
+        if e != goal[i]:
+            wrong_count +=1
+    return wrong_count + marsExploration(s[3:])
