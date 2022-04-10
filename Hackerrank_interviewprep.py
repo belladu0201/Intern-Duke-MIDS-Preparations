@@ -291,3 +291,15 @@ def twoArrays(k, A, B):
             return "NO"
     return "YES"
 # 
+
+# Q2
+def birthday(s, d, m):
+    # Write your code here
+    # contiguous segment!!! (Jeppy reminds me)
+    all_sum = []
+    # print(len(s)-m) # 3
+    for i in range(len(s) - m + 1):
+        if sum(s[i:i+m]) == d:
+            print(all_sum)
+            all_sum.append(s[i:i+m])
+    return len(all_sum)
