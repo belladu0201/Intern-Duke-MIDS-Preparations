@@ -26,3 +26,20 @@ class Solution:
         if switch >= 1:
             return max(length)
         return len(temp.values())
+##################################################
+        temp = {}
+        idx = [0]
+        for i in range(len(s)):
+            if s[i] not in temp:
+                temp[s[i]] = 1
+            else:
+                idx.append(i)
+                temp = {}
+                temp[s[i]] = 1
+        #idx.append(len(s))
+        output = [i for i in range(len(idx))]
+        for i in range(len(idx)-1):
+            output.append(idx[i:i+1])
+        print(output)
+
+        #return (max(diff))
