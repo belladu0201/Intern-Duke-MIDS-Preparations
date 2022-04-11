@@ -4,7 +4,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 - In `Hackerrank_interviewprep.py` this file, it includes my solution to 3 Months HackerRank Interview Preparation Kits. Although I am pretty new to the job search in the field of Data Science/Analytics, I would assume the Python basics are necessary for the interviews :) hopefully I can get some.
 - According to the requirements of MIDS program at Duke, I need to do some preparation to juan other dalaos.
 - I heard that all you need is `https://neetcode.io/`: the blind leetcode 75 (Reference: https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
-
+#### My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
 
 Required Courses       | Resources
 ------------- | -------------
@@ -53,4 +53,3 @@ Gross Hall 270 | TuTh 13:45 - 15:00 | Practicing Data Science: Tools (IDS 720) |
 Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Workshop (IDS 898) | 0.5 unit
 Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
 
-## My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
