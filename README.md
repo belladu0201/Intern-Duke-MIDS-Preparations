@@ -52,3 +52,5 @@ Gross Hall 103 | MW 13:45 - 15:00 | Data Engineering Systems (IDS 706) | 3 units
 Gross Hall 270 | TuTh 13:45 - 15:00 | Practicing Data Science: Tools (IDS 720) | 3 units | https://www.practicaldatascience.org/html/index.html
 Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Workshop (IDS 898) | 0.5 unit
 Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
+
+![](https://us-central1-progress-markdown.cloudfunctions.net/progress/10)
