@@ -338,3 +338,60 @@ def migratoryBirds(arr):
             a.append(k)
     a.sort()
     return a[0]
+# Maximum Perimeter Triangle
+def maximumPerimeterTriangle(sticks):
+    # Write your code here
+    sticks.sort()
+    temp = []
+    for i in range(0,len(sticks)-2):
+        print(i) # 0 1 2
+        if (sticks[i] + sticks[i+1] > sticks[i+2]) & (
+            sticks[i+1] - sticks[i] < sticks[i+2]
+        ):
+            temp.append([sticks[i],sticks[i+1],sticks[i+2]])
+    #print("runned",temp)
+    if not temp:
+        return [-1]
+    return list(temp[-1])
+# 2 3 3 
+
+        
+    # def find_3_len(sticks):
+    #     if len(sticks) < 3:
+    #         return -1
+    #     temp = []
+    #     if sum(sticks[:2]) > sticks[2]:
+    #         if sum(sticks[:2]) < sticks[2]:
+    #             temp.append(sticks[:3])
+    #     return temp.append(find_3_len(sticks[1:]))
+    # return find_3_len(sticks)
+                
+    # if len(sticks) == 0:
+    #     return 0
+    # two_sides,result,idx = [],[],[]
+    # sticks.sort()
+    # #print(sticks)
+    # for i in range(len(sticks)):
+    #     for j in range(i,len(sticks)):
+    #         if i!=j:
+    #             two_sides.append([sticks[i],sticks[j]])
+    #             idx.append([i,j])
+    # #print(two_sides)
+    # for i,e in enumerate(two_sides):
+    #     for i1,e1 in enumerate(sticks):
+    #         if (sum(e) > e1) & (i1 not in idx[i]):
+    #             if abs(e[0] - e[1]) < e1:
+    #                 result.append(e)
+    #                 # for i in e:
+    #                 #     result.append(i)
+    #                 result += [e1]
+    # max_val = 0
+    # goal  = []
+    # print(result)
+    # for i in range(len(result)//2+1):
+    #     if max_val< (sum(result[i]) + result[i+1]):
+    #         max_val = sum(result[i]) + result[i+1]
+    #         goal.append(result[i][0])
+    #         goal.append(result[i][1])
+    #         goal.append(result[i+1])
+    # return goal[-3:]
