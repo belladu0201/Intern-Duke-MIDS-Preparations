@@ -304,6 +304,7 @@ def birthday(s, d, m):
             all_sum.append(s[i:i+m])
     return len(all_sum)
 # Q3
+# Q4
 def sockMerchant(n, ar):
     # Write your code here
     pairs = {}
@@ -320,3 +321,20 @@ def sockMerchant(n, ar):
         if v % 2 != 0:
             pairs[k] -= 1
     return sum(pairs.values())//2
+
+# Q5 Migratory Birds
+def migratoryBirds(arr):
+    # Write your code here
+    temp = {}
+    a = []
+    for i in arr:
+        if i not in temp:
+            temp[i] = 1
+        else:
+            temp[i] += 1
+    largest_key =max(temp.values())
+    for k,v in temp.items():
+        if v == largest_key:
+            a.append(k)
+    a.sort()
+    return a[0]
