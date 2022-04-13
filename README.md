@@ -55,5 +55,5 @@ Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
 
 ## Professors/Instructors @Duke (for further research assistant purpose)
 Name | Courses teach | Websites | Research Topics
------------- | ------------ | ------------ | ------------ | ------------
+------------ | ------------ | ------------ | ------------ 
  Nicholas Eubank | Unifying Data Science (IDS 701) | https://www.nickeubank.com/ | Political Science
