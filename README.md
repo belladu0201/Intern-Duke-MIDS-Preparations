@@ -54,9 +54,9 @@ Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Work
 Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
 
 ## Professors/Instructors @Duke (for further research assistant purpose)
-Name | Courses teach | Websites | Research Topics
------------- | ------------ | ------------ | ------------ 
+Name | Courses teach | Websites | Research Topics | Publications
+------------ | ------------ | ------------ | ------------ | ------------ 
  Nicholas Eubank | Unifying Data Science (IDS 701) | https://www.nickeubank.com/ | Political Science
  John Haws | Introduction to Natural Language Processing (IDS 703) | https://johnhaws.com/ | Math-related?
  Kyle Bradbury | Practicing Machine Learning (IDS 705) | https://energy.duke.edu/about/staff/kyle-bradbury | Stats Modeling\ML?
- Noah Gift | Data Engineering Systems (IDS 706) | https://noahgift.com/courses/latest/ | Data Science
+ Noah Gift | Data Engineering Systems (IDS 706) | https://noahgift.com/courses/latest/ | Data Science | https://paiml.com/docs/home/books/minimal-python/
