@@ -53,3 +53,7 @@ Gross Hall 270 | TuTh 13:45 - 15:00 | Practicing Data Science: Tools (IDS 720) |
 Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Workshop (IDS 898) | 0.5 unit
 Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
 
+## Professors/Instructors @Duke (for further research assistant purpose)
+Name | Courses teach | Websites | Research Topics
+------------ | ------------ | ------------ | ------------ | ------------
+ Nicholas Eubank | Unifying Data Science (IDS 701) | https://www.nickeubank.com/ | Political Science
