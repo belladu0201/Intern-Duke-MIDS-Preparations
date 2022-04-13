@@ -57,3 +57,5 @@ Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
 Name | Courses teach | Websites | Research Topics
 ------------ | ------------ | ------------ | ------------ 
  Nicholas Eubank | Unifying Data Science (IDS 701) | https://www.nickeubank.com/ | Political Science
+ John Haws | Introduction to Natural Language Processing (IDS 703) | https://johnhaws.com/ | Math-related?
+ Kyle Bradbury | Practicing Machine Learning (IDS 705) | https://energy.duke.edu/about/staff/kyle-bradbury | Stats Modeling\ML?
