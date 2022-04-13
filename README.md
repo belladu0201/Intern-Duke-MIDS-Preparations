@@ -59,4 +59,11 @@ Name | Courses teach | Websites | Research Topics | Publications
  Nicholas Eubank | Unifying Data Science (IDS 701) | https://www.nickeubank.com/ | Political Science
  John Haws | Introduction to Natural Language Processing (IDS 703) | https://johnhaws.com/ | Math-related?
  Kyle Bradbury | Practicing Machine Learning (IDS 705) | https://energy.duke.edu/about/staff/kyle-bradbury | Stats Modeling\ML?
- Noah Gift | Data Engineering Systems (IDS 706) | https://noahgift.com/courses/latest/ | Data Science | https://paiml.com/docs/home/books/minimal-python/; https://noahgift.com/courses/latest/ \n https://www.coursera.org/instructor/noahgift
+ Noah Gift | Data Engineering Systems (IDS 706) | https://noahgift.com/courses/latest/ | Data Science | https://paiml.com/docs/home/books/minimal-python/; https://noahgift.com/courses/latest/ ; https://www.coursera.org/instructor/noahgift
+ 
+ #### Questions to consider before entering Duke
+ * Fall Classes (Does everyone take the same classes? skip Intro. to NLP for Fall?)
+ * Class size for class of 2024? (male vs. female, avg. age)
+ * Electives (taking ECE/BIOSTAT/STAT)
+ * Career Service (when to prepare and what to expect in bootcamp?)
+ * Workload? 10+hrs/3units course?
