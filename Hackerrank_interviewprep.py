@@ -395,3 +395,45 @@ def maximumPerimeterTriangle(sticks):
     #         goal.append(result[i][1])
     #         goal.append(result[i+1])
     # return goal[-3:]
+
+# Drawing Pages
+# Complete the 'pageCount' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER n
+#  2. INTEGER p
+#
+
+def pageCount(n, p):
+    # Write your code here
+    # n is the total page that this book has
+    # p is the target page
+    # Goal: the find the min page that needs to be turned
+    # from both front and back
+    # n = 6, p = 2
+    # 
+    #front = (p-1)//2 # steps to 0 to p
+    # n = 8, p = 5
+    # [1] [2 3] [4 5] [6 7] [8]
+    # 1-5 = 4//2 = 2
+    # 8-5 = 3 // 2 = 1
+    #back = (n+1-p) // 2
+    # front_flip = [i for i in range(1,n+1) if i % 2 == 0]
+    # front_times = [i for i in range(len(front_flip))]
+    # if p in front_flip:
+    #     front = front_times[front_flip.index(p)]
+    # else:
+    #     for i in range(len(front_flip)-1):
+    #         if p>front_flip[i] and p<front_flip[i+1]:
+    #             front = front_times[front_flip.index(front_flip[i])]
+    if n % 2 == 0:
+        back = (n-p+1)//2
+    else:
+        back = (n-p)//2
+    if p %2 == 0:
+        front = (p+1) // 2
+    else:
+        front = (p) // 2
+    return min(front,back)
+
