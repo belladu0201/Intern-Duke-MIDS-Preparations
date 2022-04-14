@@ -64,7 +64,12 @@ Name | Courses teach | Websites | Research Topics | Publications
  
  #### Questions to consider before entering Duke
  * Fall Classes (Does everyone take the same classes? skip Intro. to NLP for Fall?)
+ Answer: Yes. I have listed the first semester class above. IDS720 is optional, need to take test in bootcamp to see if required.
  * Class size for class of 2024? (male vs. female, avg. age)
+ Answer: Don't know for now. Everything will be known until 4/15.
  * Electives (taking ECE/BIOSTAT/STAT)
+ Answer: Will ask once arrived Duke.
  * Career Service (when to prepare and what to expect in bootcamp?)
+ Answer: workshop will prepare everything.
  * Workload? 10+hrs/3units course?
+ Answer: Students mentioning workload for 4 courses is pretty heavy.
