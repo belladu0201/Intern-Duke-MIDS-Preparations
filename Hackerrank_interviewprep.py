@@ -95,7 +95,16 @@ if __name__ == '__main__':
 #  2. INTEGER k
 #  3. INTEGER_ARRAY ar
 #
+# WK4
 
+# Left Rotation
+def rotateLeft(d, arr):
+    # Write your code here
+    temp = []
+    temp.append(arr[d:])
+    temp.append(arr[:d])
+    temp = [j for i in temp for j in i]
+    return temp
 def divisibleSumPairs(n, k, ar):
     # Write your code here
     sum_ct = []
