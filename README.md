@@ -66,6 +66,8 @@ Name | Courses teach | Websites | Research Topics | Publications
  ## Academic Schedule of 2022-2023 School year
  Semester | Start Date | Class ends | Vacation Duration
  ------------ | ------------ | ------------ | ------------ 
+ Fall 2022 | 8/29/2022/ | 12/02/2022 |
+ Spring 2023 | 01//2022 | 2022 |
  #### Questions to consider before entering Duke
  * Fall Classes (Does everyone take the same classes? skip Intro. to NLP for Fall?)
  Answer: Yes. I have listed the first semester class above. IDS720 is optional, need to take test in bootcamp to see if required.
