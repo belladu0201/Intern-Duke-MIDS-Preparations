@@ -63,6 +63,9 @@ Name | Courses teach | Websites | Research Topics | Publications
  Kyle Bradbury | Practicing Machine Learning (IDS 705) | https://energy.duke.edu/about/staff/kyle-bradbury | Stats Modeling\ML?
  Noah Gift | Data Engineering Systems (IDS 706) | https://noahgift.com/courses/latest/ | Data Science | https://paiml.com/docs/home/books/minimal-python/; https://noahgift.com/courses/latest/ ; https://www.coursera.org/instructor/noahgift
  
+ ## Academic Schedule of 2022-2023 School year
+ Semester | Start Date | Class ends | Vacation Duration
+ ------------ | ------------ | ------------ | ------------ 
  #### Questions to consider before entering Duke
  * Fall Classes (Does everyone take the same classes? skip Intro. to NLP for Fall?)
  Answer: Yes. I have listed the first semester class above. IDS720 is optional, need to take test in bootcamp to see if required.
