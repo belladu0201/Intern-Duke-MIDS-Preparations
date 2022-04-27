@@ -446,3 +446,19 @@ def pageCount(n, p):
         front = (p) // 2
     return min(front,back)
 
+# 
+def closestNumbers(arr):
+    # Write your code here
+    arr.sort()
+    lst,m = [],[]
+    for i in range(len(arr)-1):
+        lst.append((arr[i], arr[i+1]))
+        m.append(abs(arr[i+1]-arr[i]))
+    if m.count(min(m)) == 1:
+        return lst[m.index(min(m))]
+    output = []
+    for i,e in enumerate(m):
+        if e == min(m):
+            output.append(lst[i])
+    #return [lst[i] for i,e in enumerate(m) if e == min(m) ]
+    return [j for i in output for j in i]
