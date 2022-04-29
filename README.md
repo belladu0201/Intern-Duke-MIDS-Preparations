@@ -79,3 +79,9 @@ Name | Courses teach | Websites | Research Topics | Publications
  Answer: workshop will prepare everything.
  * Workload? 10+hrs/3units course?
  Answer: Students mentioning workload for 4 courses is pretty heavy.
+
+
+## Course Experience from past students
+- IDS706: Using AWS, need self-learning, complicated, easy to get A
+- IDS702: linear regression，logistic regression，missing data，panel data/ hierarchical model, lots of homework and care about the grading
+- IDS703: very hard for non-cs/stats students, need to calculate markov chain using best data structure, build neural network using pytorch
