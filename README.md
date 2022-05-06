@@ -85,3 +85,13 @@ Name | Courses teach | Websites | Research Topics | Publications
 - IDS706: Using AWS, need self-learning, complicated, easy to get A
 - IDS702: linear regression，logistic regression，missing data，panel data/ hierarchical model, lots of homework and care about the grading
 - IDS703: very hard for non-cs/stats students, need to calculate markov chain using best data structure, build neural network using pytorch
+
+# Duke University Housing
+Name    | Price Range | More
+------------- | ------------- | -------------
+Blue Light | . | Location near ninth street, can only 12-month leasing term
+Berkshire Main Street | 2400-4600 | Price not that good, safe, but maybe commute is a problem
+Berkshire Ninth Street | 2400-4800 | Price is a little bit high
+Trinity Commons | 2100-4000 | Good location, but hard to find the good ones
+Loft | . | Low reviews on Google
+Erwin Terrance |.| Good location, close to school, but hard to reserve
