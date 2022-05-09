@@ -5,7 +5,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 - In `Hackerrank_interviewprep.py` this file, it includes my solution to 3 Months HackerRank Interview Preparation Kits. Although I am pretty new to the job search in the field of Data Science/Analytics, I would assume the Python basics are necessary for the interviews :) hopefully I can get some.
 - According to the requirements of MIDS program at Duke, I need to do some preparation to juan other dalaos.
 - I heard that all you need is `https://neetcode.io/`: the blind leetcode 75 (Reference: https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
-- I got accpeted in CodePath's Intro. to Software Engineering (Intro Track) Free bootcamp, and here's the syllabus: https://courses.codepath.org/snippets/intro_software_eng/overview. I think this will well prepared me for the upcoming intern applying season. I might be apply for intermediate/advanced track later. I am not sure if da/ds position require these set of skills.
+- I got accpeted in CodePath's Intro. to Software Engineering (Intro Track) Free bootcamp, and here's the syllabus: https://courses.codepath.org/snippets/intro_software_eng/overview. I think this will well prepared me for the upcoming intern applying season. I might be apply for intermediate/advanced track later. I am not sure if da/ds position require these set of skills. I really appreciate these kinds of programs existed and people might gain a lot of experiences/networking through these programs.
 #### My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
 
 Required Courses       | Resources
