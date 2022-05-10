@@ -10,3 +10,12 @@ class Solution:
             diff = i - cur_min
             diff_max = max(diff_max,diff)
         return diff_max
+ # second time writing this question, need to remember this algorithm  
+def maxProfit(self, prices: List[int]) -> int:
+        min_val = prices[0]
+    diff = []
+    for i in prices:
+        cur = i
+        min_val = min(min_val,i)
+        diff.append(cur-min_val)
+    return max(diff)
