@@ -92,9 +92,9 @@ Name | Courses teach | Websites | Research Topics | Publications
 # Duke University Housing
 Name    | Price Range | More
 ------------- | ------------- | -------------
-Blue Light | . | Location near ninth street, can only 12-month leasing term
-Berkshire Main Street | 2400-4600 | Price not that good, safe, but maybe commute is a problem
-Berkshire Ninth Street | 2400-4800 | Price is a little bit high
-Trinity Commons | 2100-4000 | Good location, but hard to find the good ones
-Loft | . | Low reviews on Google
-Erwin Terrance |.| Good location, close to school, but hard to reserve
+Blue Light | ~ | Location near ninth street, can only 12-month leasing term. Near Berkshire, location good. (Downtown)
+Berkshire Main Street | 2400-4600 | Price not that good, safe, but maybe commute is a problem. train station very load.
+Berkshire Ninth Street | 2400-4800 | Price is a little bit high. Good location, near wholefoods, train station very load.
+Trinity Commons | 2100-4000 | Good location, but hard to find the good ones. waitlist system.
+Loft | ~ | Low reviews on Google. not sure about this apt
+Erwin Terrance |~| Good location, close to school, but hard to reserve. No apt at all when called in mid March.
