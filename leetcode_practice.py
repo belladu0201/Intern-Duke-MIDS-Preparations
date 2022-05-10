@@ -19,3 +19,7 @@ def maxProfit(self, prices: List[int]) -> int:
         min_val = min(min_val,i)
         diff.append(cur-min_val)
     return max(diff)
+# 217. Contains Duplicate
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(nums) != len(set(nums))
