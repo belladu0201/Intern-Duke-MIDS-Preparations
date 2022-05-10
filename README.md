@@ -7,6 +7,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 - I heard that all you need is `https://neetcode.io/`: the blind leetcode 75 (Reference: https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
 - I got accpeted in CodePath's Intro. to Software Engineering (Intro Track) Free bootcamp, and here's the syllabus: https://courses.codepath.org/snippets/intro_software_eng/overview. I think this will well prepared me for the upcoming intern applying season. I might be apply for intermediate/advanced track later. I am not sure if da/ds position require these set of skills. I really appreciate these kinds of programs existed and people might gain a lot of experiences/networking through these programs.
 #### My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
+#### My goal here is to do 5 questions on average per week and see if I can persist on doing it.
 
 Required Courses       | Resources
 ------------- | -------------
