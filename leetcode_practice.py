@@ -49,3 +49,15 @@ class Solution:
                         temp.append(0)
         return temp
 
+    # 53. Maximum Subarray
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        if len(nums) == 1:
+            return nums[0]
+        max_cur,max_val = nums[0],nums[0]
+        for i in range(0,len(nums)-1):
+            max_cur = max(nums[i+1],max_cur+nums[i+1])
+            max_val = max(max_val,max_cur)
+        return max_val
+            
+        
