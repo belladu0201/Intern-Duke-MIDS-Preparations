@@ -60,4 +60,20 @@ class Solution:
             max_val = max(max_val,max_cur)
         return max_val
             
+  # 1688. Count of Matches in Tournament     
+# didn't figure it out immediately, the team not played will move on to semi-final
+class Solution:
+    def numberOfMatches(self, n: int) -> int:
+        sum_ = 0
+        if n < 2:
+            return 0
+        while n >= 2:
+            if n  % 2 == 0:
+                n  = n / 2
+                sum_ += n
+            else:
+                n = (n-1)/2 + 1
+                sum_ += n-1
+        return int(sum_)
         
+# return n-1
