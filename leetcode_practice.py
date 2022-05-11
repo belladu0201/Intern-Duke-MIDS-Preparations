@@ -76,4 +76,11 @@ class Solution:
                 sum_ += n-1
         return int(sum_)
         
-# return n-1
+# return n-1 using induction will prove this
+# Base case : n = 2; n -> 1 --> base case matches
+# Inductive step:
+# n - 1 = n when n is an odd number
+# thus n-1 = n = (n-1)/2 + (n-1)/4 + (n-1)/8 + ... + 1 --> n - 1
+# (n-1)*(1/2 + 1/4 + 1/8 + ... + 1) = n - 1
+# (1/2 + 1/4 + 1/8 + ... + 1) --> 1
+# n + 1 = (n+1)*(1/2 + 1/4 + 1/8 + ... + 1) = n + 1 = n + 2
