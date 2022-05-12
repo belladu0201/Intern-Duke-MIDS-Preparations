@@ -84,3 +84,22 @@ class Solution:
 # (n-1)*(1/2 + 1/4 + 1/8 + ... + 1) = n - 1
 # (1/2 + 1/4 + 1/8 + ... + 1) --> 1
 # n + 1 = (n+1)*(1/2 + 1/4 + 1/8 + ... + 1) = n + 1 = n + 2
+
+# 1. Two Sum
+# Re-do the question. Last year I only know how to do it using nested for loops
+# Now I learned that using hash map (dictionary) will make it with better time/space complexity
+# I still reference the code from the discussion session, link can't be found anymore, thanks to the guy uploaded his/her answer
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        hashed = {}
+        for idx, val in enumerate(nums):
+            temp = target - val
+            if temp not in hashed:
+                hashed[val] = idx
+            else:
+                return [idx,hashed[temp]]
