@@ -48,6 +48,10 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 * A strong business sense
 * Data stack (AWS)
 
+# Biostatistics oppotunies requirements
+* SAS programmer 
+* need PHD degree for most biostatistician roles
+
 ## Two Year Plan @Duke MIDS
 Location | Fall 2022 Schedule| Courses | Units | Websites/Resources
 ------------- | ------------ | ------------ | ------------ | ------------
