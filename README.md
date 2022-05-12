@@ -8,6 +8,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 - I got accpeted in CodePath's Intro. to Software Engineering (Intro Track) Free bootcamp, and here's the syllabus: https://courses.codepath.org/snippets/intro_software_eng/overview. I think this will well prepared me for the upcoming intern applying season. I might be apply for intermediate/advanced track later. I am not sure if da/ds position require these set of skills. I really appreciate these kinds of programs existed and people might gain a lot of experiences/networking through these programs.
 - I actually find a better version of the leetcode questions: the grind 75 instaed of the blind 75. Here is the link: https://www.techinterviewhandbook.org/grind75?difficulty=Easy
 #### My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
+#### No. of leetcode questions that I have done since 2022: 6
 #### My goal here is to do 5 questions on average per week and see if I can persist on doing it. My current rank  is: 1,060,127
 
 Required Courses       | Resources
