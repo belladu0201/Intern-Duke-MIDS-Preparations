@@ -148,3 +148,11 @@ class Solution:
         for idx, val in enumerate(nums):
             nums[idx] = sum(temp[:idx+1])
         return nums
+#  2114. Maximum Number of Words Found in Sentences
+class Solution:
+    def mostWordsFound(self, sentences: List[str]) -> int:
+        temp = {}
+        for i in sentences:
+            temp[i] = len(i.split(" "))
+        return max(temp.values())
+        
