@@ -166,4 +166,14 @@ class Solution:
             elif i in ['--X', 'X--']:
                 output -= 1
         return output
+ # 1470. Shuffle the Array
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        front = nums[:n]
+        end =nums[n:]
+        temp = []
+        for i in range(n):
+            temp.append(front[i])
+            temp.append(end[i])
+        return temp
         
