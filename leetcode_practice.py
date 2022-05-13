@@ -132,3 +132,11 @@ class Solution(object):
         """
         return [nums[i] for i in nums]
         
+#2236. Root Equals Sum of Children
+ class Solution(object):
+    def checkTree(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: bool
+        """
+        return root.val == root.left.val + root.right.val
