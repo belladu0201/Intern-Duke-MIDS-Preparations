@@ -156,3 +156,14 @@ class Solution:
             temp[i] = len(i.split(" "))
         return max(temp.values())
         
+# 2011. Final Value of Variable After Performing Operations
+class Solution:
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        output = 0
+        for i in operations:
+            if i in ['++X', 'X++']:
+                output += 1
+            elif i in ['--X', 'X--']:
+                output -= 1
+        return output
+        
