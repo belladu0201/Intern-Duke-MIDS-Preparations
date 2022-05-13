@@ -140,3 +140,11 @@ class Solution(object):
         :rtype: bool
         """
         return root.val == root.left.val + root.right.val
+    
+#1480. Running Sum of 1d Array
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        temp = nums.copy()
+        for idx, val in enumerate(nums):
+            nums[idx] = sum(temp[:idx+1])
+        return nums
