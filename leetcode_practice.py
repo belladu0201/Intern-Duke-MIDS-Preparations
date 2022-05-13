@@ -120,6 +120,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+        return nums*2 #(or nums +nums)
         output = [i for i in nums]
         return output+output
         
