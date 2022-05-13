@@ -113,3 +113,13 @@ class Solution(object):
         """
         return num1+num2
         
+# 1929. Concatenation of Array
+class Solution(object):
+    def getConcatenation(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        output = [i for i in nums]
+        return output+output
+        
