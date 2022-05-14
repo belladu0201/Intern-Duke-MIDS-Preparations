@@ -9,7 +9,8 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 - I actually find a better version of the leetcode questions: the grind 75 instaed of the blind 75. Here is the link: https://www.techinterviewhandbook.org/grind75?difficulty=Easy
 #### My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
 #### No. of leetcode questions that I have done since 2022: 6
-#### My goal here is to do 5 questions on average per week and see if I can persist on doing it. My current rank  is: 1,060,127
+#### My goal here is to do 5 questions on average per week and see if I can persist on doing it. My current rank  is: 
+866,984(1,060,127 3 weeks ago)
 
 Required Courses       | Resources
 ------------- | -------------
