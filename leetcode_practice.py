@@ -177,3 +177,12 @@ class Solution:
             temp.append(end[i])
         return temp
         
+#1512. Number of Good Pairs
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        count = 0
+        for i in range(len(nums)-1):
+            temp = nums[i]
+            if temp in nums[i+1:]:
+                count += nums[i+1:].count(temp)
+        return count
