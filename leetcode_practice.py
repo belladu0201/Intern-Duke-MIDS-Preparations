@@ -186,3 +186,16 @@ class Solution:
             if temp in nums[i+1:]:
                 count += nums[i+1:].count(temp)
         return count
+# 2160. Minimum Sum of Four Digit Number After Splitting Digits
+class Solution:
+    def minimumSum(self, num: int) -> int:
+        # 1 3; 2 2; 3 1
+        # the above is the only three possibilities
+        num = [int(i) for i in str(num)]
+        num.sort()
+        temp1 = [int(str(num[0]) + str(num[2]))]
+        temp2 = [int(str(num[1]) + str(num[3]))]
+        return sum(temp1+temp2)
+  # find out another better way to do it: 10* (num[0] + num[1]) + num[2]+ num[3]
+# since we want the min sum, so we just take the min 2 numbers as the tenth digit number and let the larger two be the next digit
+        
