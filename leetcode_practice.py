@@ -198,4 +198,17 @@ class Solution:
         return sum(temp1+temp2)
   # find out another better way to do it: 10* (num[0] + num[1]) + num[2]+ num[3]
 # since we want the min sum, so we just take the min 2 numbers as the tenth digit number and let the larger two be the next digit
-        
+
+# 1588. Sum of All Odd Length Subarrays       
+class Solution:
+    def sumOddLengthSubarrays(self, arr: List[int]) -> int:
+        # want all the odd sums
+        output = 0
+        for i in range(len(arr)):
+            for j in range(i,len(arr)):
+                # [0,1], [1,2],[2,3],[3,4],[4,5]
+                # [0,3], [2,5]
+                # [0,5]
+                if (i+j) % 2 == 0:
+                    output+=sum(arr[i:j+1])
+        return output
