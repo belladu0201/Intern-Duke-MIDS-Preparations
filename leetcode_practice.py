@@ -237,8 +237,9 @@ class Solution(object):
         zero_count=nums.count(0)
         for i in range(zero_count):
             nums.remove(0)
-        for i in range(zero_count):
             nums.append(0)
+        #for i in range(zero_count):
+            #nums.append(0)
         return nums
                 
         
