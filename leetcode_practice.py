@@ -212,3 +212,17 @@ class Solution:
                 if (i+j) % 2 == 0:
                     output+=sum(arr[i:j+1])
         return output
+
+# 70. Climbing Stairs
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        # n = 4
+        # 1 1 1 1; 1 2 1; 1 1 2; 2 1 1; 2 2
+        # 4-->5; 1--> 1; 2-->2; 3--> 3
+        # 1 2 3 5...
+        if n <= 2:
+            return n
+        start = [1,2]
+        for i in range(2,n):
+            start.append(sum(start[-2:]))
+        return start[-1]
