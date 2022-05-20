@@ -226,3 +226,19 @@ class Solution:
         for i in range(2,n):
             start.append(sum(start[-2:]))
         return start[-1]
+# 283. Move Zeroes
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        # in-place means that I can't create a new list
+        zero_count=nums.count(0)
+        for i in range(zero_count):
+            nums.remove(0)
+        for i in range(zero_count):
+            nums.append(0)
+        return nums
+                
+        
