@@ -6,8 +6,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 - According to the requirements of MIDS program at Duke, I need to do some preparation to juan other dalaos.
 - I heard that all you need is `https://neetcode.io/`: the blind leetcode 75 (Reference: https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
 - I got accpeted in CodePath's Intro. to Software Engineering (Intro Track) Free bootcamp, and here's the syllabus: https://courses.codepath.org/snippets/intro_software_eng/overview. I think this will well prepared me for the upcoming intern applying season. I might be apply for intermediate/advanced track later. I am not sure if da/ds position require these set of skills. I really appreciate these kinds of programs existed and people might gain a lot of experiences/networking through these programs.
-- I actually find a better version of the leetcode questions: the grind 75 instaed of the blind 75. Here is the link: https://www.techinterviewhandbook.org/grind75?difficulty=Easy
-- Thanks to one friend from MIDS tole me how he got good offer from big tech: `Refer` and `leetcode top 100 questions`.
+- I actually find a better version of the leetcode questions: the grind 75 instaed of the blind 75. Here is the link: https://www.techinterviewhandbook.org/grind75?difficulty=Easy. Need to be aware of `Refer` and `leetcode top 100 questions`
 - Recently I found out the website for sql/ds questions only and I got the lifetime access to it: `https://www.stratascratch.com/`
 #### My Progress on HackerRank Interview Problems: ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/16)
 #### No. of leetcode questions that I have done since 2022: 6
