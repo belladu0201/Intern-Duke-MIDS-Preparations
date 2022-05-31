@@ -11,3 +11,13 @@ SELECT
 from 
     worker
 WHERE salary = (SELECT max(salary) from worker)
+
+--Find the number of workers by department (Amazon)
+select  
+    department, COUNT(worker_id) as worker_count
+from 
+    worker
+GROUP BY 
+    department
+ORDER BY
+    worker_count DESC
