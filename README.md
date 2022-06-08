@@ -58,7 +58,7 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 ## Two Year Plan @Duke MIDS
 Location | Fall 2022 Schedule| Courses | Units | Websites/Resources
 ------------- | ------------ | ------------ | ------------ | ------------
-FITZPATRICK SCHICIANO B 1466 | MW 17:15 - 18:30 | Introduction to Natural Language Processing (IDS 703) | 3 units | https://github.com/cbail/ids704
+FITZPATRICK SCHICIANO B 1466 | MW 17:15 - 18:30 | Introduction to Natural Language Processing (IDS 703) | 3 units | https://github.com/cbail/ids704; https://web.stanford.edu/~jurafsky/slp3/
 Gross Hall 103 | MW 13:45 - 15:00 | Data Engineering Systems (IDS 706) | 3 units | https://github.com/noahgift/data-engineering-and-dataops
 Gross Hall 270 | TuTh 13:45 - 15:00 | Practicing Data Science: Tools (IDS 720) | 3 units | https://www.practicaldatascience.org/html/index.html
 Gross Hall 270 | MW 10:15 - 11:30 | Modeling and Representation of Data (IDS702) | 3units | https://ids702-f21.olanrewajuakande.com/
