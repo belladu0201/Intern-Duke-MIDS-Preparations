@@ -321,3 +321,13 @@ class Solution(object):
         # for i in range(0,length % 2+1):
         #     s[i],s[-(i+1)] = s[-(i+1)],s[i]
         # return s
+
+# 905. Sort Array By Parity
+class Solution(object):
+    def sortArrayByParity(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        return ([i for i in nums if i % 2 == 0] + [i for i in nums if i % 2 != 0])
+        
