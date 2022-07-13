@@ -275,3 +275,30 @@ class Solution:
             prev = curr
             curr = temp
         return prev
+
+    # 125. Valid Palindrome
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        temp = ""
+        for i in s:
+            #print(i)
+            if i.isalnum():
+                temp += i
+                #print(i)
+        temp = temp.lower()
+        #print(temp)
+        pt1,pt2 = 0,len(temp)-1
+        #if len(temp) == 1: return False
+        while pt1 < pt2:
+            if temp[pt1] != temp[pt2]:
+                return False
+            else:
+                pt1 +=1
+                pt2 -=1
+                #print("runned")
+        return True
+        
