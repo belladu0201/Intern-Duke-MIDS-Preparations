@@ -302,3 +302,22 @@ class Solution(object):
                 #print("runned")
         return True
         
+# 344. Reverse String
+class Solution(object):
+    def reverseString(self, s):
+        """
+        :type s: List[str]
+        :rtype: None Do not return anything, modify s in-place instead.
+        """
+        length = len(s)
+        # if length  % 2 == 0:
+        # use two pointers again
+        left,right  = 0,length-1
+        while left < right:
+            s[left],s[right] = s[right],s[left]
+            left += 1
+            right -=1
+        return s
+        # for i in range(0,length % 2+1):
+        #     s[i],s[-(i+1)] = s[-(i+1)],s[i]
+        # return s
