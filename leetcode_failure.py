@@ -114,4 +114,26 @@ class Solution:
             prod = max(lst)
         return prod
             
-            
+   # 680
+class Solution(object):
+    def validPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        left,right = 0,len(s)-1
+        count_delete = 0
+        while left < right:
+            if s[left] == s[right]:
+                left += 1
+                right -=1
+            elif count_delete == 0:
+                if s[left+1] == s[right] :
+                    count_delete+=1
+                    left +=2
+                if s[left] == s[right-1]:
+                    count_delete+=1
+                    right -=2
+            elif s[left] != s[right]:
+                return False
+        return True
