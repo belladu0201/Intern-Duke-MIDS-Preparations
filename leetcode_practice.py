@@ -348,5 +348,29 @@ class Solution:
         for i in range(1,len(nums)):
             nums[i] += nums[i-1]
         return nums
+  
+# 724. Find Pivot Index
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+        # if sum(nums) == 0:
+        #     return 0
+        
+        
+        # time exceeds
+        # for i in range(len(nums)):
+        #     #print([sum(nums[:i]),sum(nums[i:])])
+        #     if sum(nums[:i]) == sum(nums[i+1:]):
+        #         return i
+        # return -1
+        
+        # using two pointers
+        l1 = 0
+        l2 = sum(nums)
+        for i in range(len(nums)):
+            l2 -= nums[i]
+            if l1 == l2:
+                return i
+            l1 += nums[i]
             
+        return -1
             
