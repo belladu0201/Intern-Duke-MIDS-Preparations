@@ -338,4 +338,15 @@ class Solution:
         for i in range(len(nums)):
             temp.append(sum(nums[:i+1]))
         return temp
+# Revised solution based on discussion
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        # temp = []
+        # for i in range(len(nums)):
+        #     temp.append(sum(nums[:i+1]))
+        # return temp
+        for i in range(1,len(nums)):
+            nums[i] += nums[i-1]
+        return nums
+            
             
