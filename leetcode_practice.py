@@ -331,3 +331,11 @@ class Solution(object):
         """
         return ([i for i in nums if i % 2 == 0] + [i for i in nums if i % 2 != 0])
         
+# 1480. Running Sum of 1d Array
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        temp = []
+        for i in range(len(nums)):
+            temp.append(sum(nums[:i+1]))
+        return temp
+            
