@@ -438,3 +438,49 @@ class Solution:
                 return False
             
         return True
+    
+# 392. Is Subsequence    
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        # dynamic programming and two pointers
+        # Approach 1: Divide and Conquer with Greedy, need to use recursion
+# class Solution:
+#     def isSubsequence(self, s: str, t: str) -> bool:
+#         LEFT_BOUND, RIGHT_BOUND = len(s), len(t)
+
+#         def rec_isSubsequence(left_index, right_index):
+#             # base cases
+#             if left_index == LEFT_BOUND:
+#                 return True
+#             if right_index == RIGHT_BOUND:
+#                 return False
+#             # consume both strings or just the target string
+#             if s[left_index] == t[right_index]:
+#                 left_index += 1
+#             right_index += 1
+
+#             return rec_isSubsequence(left_index, right_index)
+
+#         return rec_isSubsequence(0, 0)
+
+        
+        
+########################################################################################
+        
+        # Approach 2: Two Pointers
+        
+        # the length of the substring and the original string
+        source,target = len(s),len(t)
+        # set the two pointer at 0 for both strings
+        l1 = l2 = 0
+        
+        # While loop to loop through the two strings, make sure it doesn't exceed the length of the string
+        while l1 < source and l2 < target:
+            # if the element in then the left(source) string to check the next char
+            if s[l1] == t[l2]:
+                l1 += 1
+            # if not found we need to check the next char in the target string
+            l2 += 1
+         
+        # check if the loop finishes the whole subsequence
+        return l1 == source
