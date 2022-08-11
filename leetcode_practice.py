@@ -423,4 +423,18 @@ class Solution:
             if n == 1:
                 return True
         return False
+        
+# 205. Isomorphic Strings
+# mapping with dictionary
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        s_dict,t_dict = {},{}
+        for s1,t1 in zip(s,t):
+            if (s1 not in s_dict) and (t1 not in t_dict):
+                s_dict[s1] = t1
+                t_dict[t1] = s1
+                
+            elif (s_dict.get(s1) != t1) or (t_dict.get(t1) != s1):
+                return False
             
+        return True
