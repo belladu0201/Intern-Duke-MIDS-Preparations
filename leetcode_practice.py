@@ -484,3 +484,27 @@ class Solution:
          
         # check if the loop finishes the whole subsequence
         return l1 == source
+# 21. Merge Two Sorted Lists
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # left,right = list1.val, list2.val
+        
+        # if any of the linked list is blank, return the other one
+        # base case
+        if list1 is None:
+            return list2
+        elif list2 is None:
+            return list1
+        
+        # compare the value of each linked list
+        if list1.val < list2.val:
+            list1.next = self.mergeTwoLists(list1.next, list2)
+            return list1
+        else:
+            list2.next = self.mergeTwoLists(list1,list2.next)
+            return list2
