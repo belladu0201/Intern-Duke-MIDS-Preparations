@@ -508,3 +508,15 @@ class Solution:
         else:
             list2.next = self.mergeTwoLists(list1,list2.next)
             return list2
+# 876. Middle of the Linked List
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        temp = [head]
+        while (temp[-1].next != None):
+            temp.append(temp[-1].next)
+        return temp[len(temp)//2]
