@@ -520,3 +520,11 @@ class Solution:
         while (temp[-1].next != None):
             temp.append(temp[-1].next)
         return temp[len(temp)//2]
+#################### big brain method to find the median in the linkedin list ############################
+class Solution:
+    def middleNode(self, head):
+        slow = fast = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
