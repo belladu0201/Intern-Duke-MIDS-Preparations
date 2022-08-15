@@ -21,3 +21,11 @@ GROUP BY
     department
 ORDER BY
     worker_count DESC
+-- Salaries Differences
+-- Interview Question Date: November 2020
+select (
+    MAX(Case when department = 'marketing' then salary end) 
+    - 
+    MAX( Case when department = 'engineering' then salary end)) as s_diff
+FROM db_employee de 
+LEFT JOIN db_dept dd ON de.department_id = dd.id;
