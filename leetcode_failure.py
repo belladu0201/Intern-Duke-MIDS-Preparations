@@ -137,3 +137,41 @@ class Solution(object):
             elif s[left] != s[right]:
                 return False
         return True
+# 409. Longest Palindrome
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        # if len(s) % 2 == 0:
+        #     # 4, index 1,2
+        #     l1,l2 = len(s)//2 - 1,len(s)//2
+        #     max_len = 0
+        # else:
+        #     # 3, index 0,2
+        #     l1,l2 = len(s)//2 - 1,len(s)//2 + 1
+        #     max_len = 1
+        # while l1 > 0 and l2 < len(s):
+        #     if s[l1] == s[l2]:
+        #         max_len += 2
+        #         l1 -= 1
+        #         l2 += 1
+        #     else:
+        #         break
+        # return max_len
+        temp = {}
+        result = 0
+        for i in s:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for k,v in temp.items():
+            if v % 2 == 0:
+                result += v
+            else:
+                while v - 1 > 0:
+                    result += 2
+        if result == len(s):
+            return result
+        # if len(s) % 2 == 0:
+        #     return result + 1
+        
+        return result + 1
