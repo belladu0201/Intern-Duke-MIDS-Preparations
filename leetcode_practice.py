@@ -528,3 +528,18 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
         return slow
+# 409. Longest Palindrome
+class Solution:
+    def longestPalindrome(self, s: str) -> int:
+        temp = {}
+        result = 0
+        for i in s:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for k in temp.values():
+            result += k // 2 * 2
+            if result % 2 == 0 and k % 2 == 1:
+                result += 1
+        return result   
