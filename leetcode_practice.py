@@ -541,5 +541,6 @@ class Solution:
         for k in temp.values():
             result += k // 2 * 2
             if result % 2 == 0 and k % 2 == 1:
+                # once this if statements met, it will never reach again, odd + even is always odd
                 result += 1
         return result   
