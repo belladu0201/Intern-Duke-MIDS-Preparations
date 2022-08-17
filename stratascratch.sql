@@ -29,3 +29,16 @@ select (
     MAX( Case when department = 'engineering' then salary end)) as s_diff
 FROM db_employee de 
 LEFT JOIN db_dept dd ON de.department_id = dd.id;
+
+
+-- Departments With 5 Employees
+-- SELECT department
+-- from employee
+-- group by department
+-- having count(*) > 5
+SELECT
+    department
+FROM
+    employee
+GROUP BY department
+HAVING COUNT(DISTINCT id) >= 5
