@@ -568,3 +568,13 @@ class Solution:
         res = []
         dfs(root)
         return res
+# 1281. Subtract the Product and Sum of Digits of an Integer
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        temp = [int(i) for i in str(n)]
+        product = 1
+        sum_ = 0
+        for i in temp:
+            product *= i
+            sum_ += i
+        return product - sum_
