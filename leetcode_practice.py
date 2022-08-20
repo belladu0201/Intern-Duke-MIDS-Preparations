@@ -578,3 +578,11 @@ class Solution:
             product *= i
             sum_ += i
         return product - sum_
+    
+#1365. How Many Numbers Are Smaller Than the Current Number
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        temp = nums.copy()
+        nums.sort()
+        return [nums.index(i) for i in temp]
+            
