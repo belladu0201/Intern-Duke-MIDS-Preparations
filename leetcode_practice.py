@@ -597,3 +597,19 @@ class Solution:
                 num -=1
             temp += 1
         return temp
+
+# 104. Maximum Depth of Binary Tree
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if root is None:
+            return 0
+        else:
+            l1 = self.maxDepth(root.left)
+            r1 = self.maxDepth(root.right)
+            return max(l1,r1) + 1
