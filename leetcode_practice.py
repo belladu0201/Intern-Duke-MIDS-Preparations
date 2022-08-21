@@ -586,3 +586,14 @@ class Solution:
         nums.sort()
         return [nums.index(i) for i in temp]
             
+# 1342. Number of Steps to Reduce a Number to Zero
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        temp = 0
+        while num > 0:
+            if num % 2 == 0:
+                num /= 2
+            else:
+                num -=1
+            temp += 1
+        return temp
