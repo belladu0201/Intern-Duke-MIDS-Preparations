@@ -613,3 +613,24 @@ class Solution:
             l1 = self.maxDepth(root.left)
             r1 = self.maxDepth(root.right)
             return max(l1,r1) + 1
+# 160. Intersection of Two Linked Lists
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        p1 = headA
+        p2 = headB
+        # check if the node is same or not
+        while p1 != p2:      
+            # if node is None, need to change it to the other linked list
+            p1 = headB if p1 is None else p1.next
+            p2 = headA if p2 is None else p2.next           
+        return p1
