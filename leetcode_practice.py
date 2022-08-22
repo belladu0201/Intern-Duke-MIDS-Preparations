@@ -651,3 +651,12 @@ class Solution(object):
             else:
                 temp.append(i)
         return temp
+
+# 1672. Richest Customer Wealth
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        return max([sum(i) for i in accounts])
