@@ -32,3 +32,9 @@ GROUP by teacher_id
 SELECT a.team_name as home_team, b.team_name as away_team 
         from Teams a, Teams b
         WHERE a.team_name != b.team_name
+-- 1378. Replace Employee ID With The Unique Identifier
+# Write your MySQL query statement below
+SELECT IFNULL(unique_id,null) as unique_id, name
+FROM Employees
+LEFT JOIN EmployeeUNI
+ON Employees.id = EmployeeUNI.id
