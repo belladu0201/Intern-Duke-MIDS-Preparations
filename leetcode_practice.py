@@ -700,3 +700,24 @@ class Solution(object):
             image[i] = image[i][::-1]
             image[i] = [0 if j == 1 else 1 for j in image[i]]
         return image
+    
+# 1572. Matrix Diagonal Sum
+class Solution(object):
+    def diagonalSum(self, mat):
+        """
+        :type mat: List[List[int]]
+        :rtype: int
+        """
+        # [3,3] --> [00,02,11,20,21]
+        ct = 0
+        for i in range(len(mat)):
+            temp = len(mat) - i - 1
+            for j in range(len(mat)):
+                if j == temp:
+                    print(mat[i][j])
+                    ct += mat[i][j]
+                elif j == i:
+                    ct += mat[i][j]
+        # ct += mat[0][0]
+        # ct += (mat[len(mat)-1][len(mat)-1]) * (len(mat) - 2)
+        return ct
