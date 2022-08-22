@@ -660,3 +660,19 @@ class Solution(object):
         :rtype: int
         """
         return max([sum(i) for i in accounts])
+# 1431. Kids With the Greatest Number of Candies
+class Solution(object):
+    def kidsWithCandies(self, candies, extraCandies):
+        """
+        :type candies: List[int]
+        :type extraCandies: int
+        :rtype: List[bool]
+        """
+        new = [i+extraCandies for i in candies]
+        temp = []
+        for i in range(len(new)):
+            if new[i] >= max(candies):
+                temp.append(True)
+            else:
+                temp.append(False)
+        return temp
