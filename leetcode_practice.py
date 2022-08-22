@@ -689,3 +689,14 @@ class Solution(object):
                 temp.append(nums[i+1])
             
         return temp
+# 832. Flipping an Image
+class Solution(object):
+    def flipAndInvertImage(self, image):
+        """
+        :type image: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        for i in range(len(image)):
+            image[i] = image[i][::-1]
+            image[i] = [0 if j == 1 else 1 for j in image[i]]
+        return image
