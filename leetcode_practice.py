@@ -721,3 +721,16 @@ class Solution(object):
         # ct += mat[0][0]
         # ct += (mat[len(mat)-1][len(mat)-1]) * (len(mat) - 2)
         return ct
+# 1464. Maximum Product of Two Elements in an Array
+class Solution(object):
+    def maxProduct(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        temp = []
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if i!= j:
+                    temp.append((nums[i]-1)*(nums[j]-1))
+        return max(temp)
