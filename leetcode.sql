@@ -8,3 +8,9 @@ where (low_fats = 'Y') and (recyclable = 'Y')
 SELECT event_day as day, emp_id, sum(out_time - in_time) as total_time
 FROM Employees
 GROUP BY emp_id, day
+
+-- 1683. Invalid Tweets
+# Write your MySQL query statement below
+SELECT  tweet_id
+FROM Tweets
+WHERE length(content) > 15
