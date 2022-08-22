@@ -26,3 +26,9 @@ FROM Employee e2
 SELECT teacher_id, count(distinct(subject_id)) as cnt 
 from Teacher
 GROUP by teacher_id
+
+-- 2339. All the Matches of the League
+# Write your MySQL query statement below
+SELECT a.team_name as home_team, b.team_name as away_team 
+        from Teams a, Teams b
+        WHERE a.team_name != b.team_name
