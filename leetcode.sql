@@ -20,3 +20,9 @@ WHERE length(content) > 15
 SELECT employee_id, (SELECT count(team_id)  FROM Employee e1
                      WHERE e1.team_id = e2.team_id) as team_size
 FROM Employee e2
+
+-- 2356. Number of Unique Subjects Taught by Each Teacher
+# Write your MySQL query statement below
+SELECT teacher_id, count(distinct(subject_id)) as cnt 
+from Teacher
+GROUP by teacher_id
