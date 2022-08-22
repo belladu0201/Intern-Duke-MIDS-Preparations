@@ -14,3 +14,9 @@ GROUP BY emp_id, day
 SELECT  tweet_id
 FROM Tweets
 WHERE length(content) > 15
+
+-- 1303. Find the Team Size
+# Write your MySQL query statement below
+SELECT employee_id, (SELECT count(team_id)  FROM Employee e1
+                     WHERE e1.team_id = e2.team_id) as team_size
+FROM Employee e2
