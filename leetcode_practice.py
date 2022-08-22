@@ -734,3 +734,8 @@ class Solution(object):
                 if i!= j:
                     temp.append((nums[i]-1)*(nums[j]-1))
         return max(temp)
+    ##############################
+        temp1 = max(nums)
+        nums.remove(temp1)
+        temp2 = max(nums)
+        return (temp1-1)*(temp2-1)
