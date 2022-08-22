@@ -739,3 +739,12 @@ class Solution(object):
         nums.remove(temp1)
         temp2 = max(nums)
         return (temp1-1)*(temp2-1)
+    ######## MIN HEAP SOLUTION FROM DISCUSSION #########
+    class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        heap=[]
+        for i in nums:
+            heappush(heap,i)
+            if len(heap)>2:
+                heappop(heap)
+        return (heap[0]-1)*(heap[1]-1)
