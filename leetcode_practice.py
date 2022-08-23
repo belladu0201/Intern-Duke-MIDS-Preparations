@@ -788,3 +788,16 @@ class Solution(object):
         if n % 2 == 1:
             temp.append(0)
         return temp
+# 509. Fibonacci Number
+class Solution(object):
+    def fib(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 1 or n == 0: return n
+        temp = [0,1]
+        for i in range(n-1):
+            temp.append(sum(temp[i:i+2]))
+            
+        return temp[-1]
