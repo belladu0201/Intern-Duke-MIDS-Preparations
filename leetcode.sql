@@ -38,3 +38,9 @@ SELECT IFNULL(unique_id,null) as unique_id, name
 FROM Employees
 LEFT JOIN EmployeeUNI
 ON Employees.id = EmployeeUNI.id
+
+-- 1693. Daily Leads and Partners
+# Write your MySQL query statement below
+SELECT date_id, make_name, count(distinct(lead_id)) as unique_leads, count(distinct(partner_id)) as unique_partners
+FROM DailySales
+Group By make_name,date_id
