@@ -812,3 +812,11 @@ class Solution(object):
         if sum([1 for i in nums if i < 0]) % 2 == 0:
             return 1
         return -1
+# 268. Missing Number
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        return list(set([i for i in range(len(nums) + 1)]) - set(nums))[0]
