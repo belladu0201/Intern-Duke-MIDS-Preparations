@@ -801,3 +801,14 @@ class Solution(object):
             temp.append(sum(temp[i:i+2]))
             
         return temp[-1]
+# 1822. Sign of the Product of an Array
+class Solution(object):
+    def arraySign(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if 0 in nums: return 0
+        if sum([1 for i in nums if i < 0]) % 2 == 0:
+            return 1
+        return -1
