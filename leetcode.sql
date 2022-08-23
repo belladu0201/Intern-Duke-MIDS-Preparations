@@ -53,4 +53,4 @@ SELECT * FROM (
     union
     SELECT product_id, 'store3' as store, store3 as price from products
 ) cur
-where cur.price is not null
+where cur.price is not null -- != null is different from is not null
