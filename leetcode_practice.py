@@ -820,3 +820,22 @@ class Solution(object):
         :rtype: int
         """
         return list(set([i for i in range(len(nums) + 1)]) - set(nums))[0]
+# 1523. Count Odd Numbers in an Interval Range
+class Solution(object):
+    def countOdds(self, low, high):
+        """
+        :type low: int
+        :type high: int
+        :rtype: int
+        """
+        # ct = 0
+        # for i in range(low,high+1):
+        #     if i % 2 == 1:
+        #         ct += 1
+        # return ct
+        # return sum([1 for i in range(low,high+1) if i % 2 == 1])
+        
+        ct = 0
+        if low % 2 == 1 or high % 2 == 1:
+            ct = 1
+        return (high-low) // 2 + ct
