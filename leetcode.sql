@@ -61,6 +61,7 @@ FROM Students
 LEFT JOIN Departments
 on Students.department_id = Departments.id
 where Departments.id is null;
+
 -- 1587. Bank Account Summary II
 # Write your MySQL query statement below
 SELECT name, sum(amount) as balance from Users
@@ -68,3 +69,11 @@ Inner Join Transactions
 On Users.account = Transactions.account
 Group by Transactions.account
 having balance > 10000
+
+-- 1571. Warehouse Manager
+# Write your MySQL query statement below
+SELECT name as warehouse_name, sum(Warehouse.units*(Width*Length*Height)) as volume
+FROM Warehouse
+INNER JOIN Products
+ON Warehouse.product_id = Products.product_id
+GROUP BY Warehouse.name
