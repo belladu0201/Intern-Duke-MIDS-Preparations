@@ -61,3 +61,10 @@ FROM Students
 LEFT JOIN Departments
 on Students.department_id = Departments.id
 where Departments.id is null;
+-- 1587. Bank Account Summary II
+# Write your MySQL query statement below
+SELECT name, sum(amount) as balance from Users
+Inner Join Transactions
+On Users.account = Transactions.account
+Group by Transactions.account
+having balance > 10000
