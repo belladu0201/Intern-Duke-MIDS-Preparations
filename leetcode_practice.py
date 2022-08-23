@@ -748,3 +748,29 @@ class Solution(object):
             if len(heap)>2:
                 heappop(heap)
         return (heap[0]-1)*(heap[1]-1)
+# 1266. Minimum Time Visiting All Points
+class Solution(object):
+    def minTimeToVisitAllPoints(self, points):
+        """
+        :type points: List[List[int]]
+        :rtype: int
+        """
+        # temp = [points[0]]
+        # steps = 0
+        # for i in range(len(points)-1):
+        #     while temp[i] != points[i+1][0] and temp[i] != points[i+1][1]:
+        #         temp[i][0] -= 1
+        #         temp[i][1] -= 1
+        #         steps += 1
+        #     # if temp[i] == points[i+1][0] or temp[i] == points[i+1][1]:
+        #     #     steps += max(temp[0] - points[i][0], temp[1] - points[i][1])
+        # return steps
+                  
+        # for i in range(len(points) - 1):
+        #     if points[i][0] != points[i+1][0] and points[i][1] != points[i+1][1]:
+        #         ct += min(abs(points[i+1][0]-points[i][0]),abs(points[i+1][1] - points[i][1]))
+        #         ct += max(abs(points[i+1][0]-points[i][0]),abs(points[i+1][1] - points[i][1])) - 
+        ct = 0  
+        for i in range(len(points) - 1):
+            ct += max(abs(points[i+1][0]-points[i][0]),abs(points[i+1][1] - points[i][1]))
+        return ct
