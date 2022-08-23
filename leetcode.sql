@@ -44,3 +44,13 @@ ON Employees.id = EmployeeUNI.id
 SELECT date_id, make_name, count(distinct(lead_id)) as unique_leads, count(distinct(partner_id)) as unique_partners
 FROM DailySales
 Group By make_name,date_id
+-- 1795. Rearrange Products Table
+# Write your MySQL query statement below
+SELECT * FROM (
+    SELECT product_id, 'store1' as store, store1 as price from products 
+    union
+    SELECT product_id, 'store2' as store, store2 as price from products
+    union
+    SELECT product_id, 'store3' as store, store3 as price from products
+) cur
+where cur.price is not null
