@@ -54,3 +54,10 @@ SELECT * FROM (
     SELECT product_id, 'store3' as store, store3 as price from products
 ) cur
 where cur.price is not null -- != null is different from is not null
+-- 1350. Students With Invalid Departments
+# Write your MySQL query statement below
+SELECT Students.id, Students.name 
+FROM Students
+LEFT JOIN Departments
+on Students.department_id = Departments.id
+where Departments.id is null;
