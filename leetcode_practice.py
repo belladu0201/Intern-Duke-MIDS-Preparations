@@ -839,3 +839,20 @@ class Solution(object):
         if low % 2 == 1 or high % 2 == 1:
             ct = 1
         return (high-low) // 2 + ct
+# 1528. Shuffle String
+class Solution(object):
+    def restoreString(self, s, indices):
+        """
+        :type s: str
+        :type indices: List[int]
+        :rtype: str
+        """
+        # output = ""
+        # for i in indices:
+        #     output += s[i]
+        # return output
+        
+        temp = [""] * len(indices)
+        for i in range(len(indices)):
+            temp[indices[i]] = s[i]
+        return "".join(temp)
