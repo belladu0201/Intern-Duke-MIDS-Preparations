@@ -774,3 +774,17 @@ class Solution(object):
         for i in range(len(points) - 1):
             ct += max(abs(points[i+1][0]-points[i][0]),abs(points[i+1][1] - points[i][1]))
         return ct
+# 1304. Find N Unique Integers Sum up to Zero
+class Solution(object):
+    def sumZero(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        temp = []
+        for i in range( 1, n // 2  + 1):
+            temp.append(i)
+            temp.append(-i)
+        if n % 2 == 1:
+            temp.append(0)
+        return temp
