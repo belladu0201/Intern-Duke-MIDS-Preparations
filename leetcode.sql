@@ -95,3 +95,10 @@ FROM Employee
 LEFT JOIN Bonus
 ON Employee.empId = Bonus.empId
 WHERE bonus < 1000 or bonus is Null
+-- 196. Delete Duplicate Emails
+# Please write a DELETE statement and DO NOT write a SELECT statement.
+# Write your MySQL query statement below
+DELETE a from Person a
+Inner Join Person b
+ON a.email = b.email
+WHERE a.id > b.id
