@@ -901,3 +901,21 @@ class Solution:
         #             ct += 1
         # print(temp)
         # return ct
+# 1086. High Five
+class Solution:
+    def highFive(self, items: List[List[int]]) -> List[List[int]]:
+        temp = {}
+        output = []
+        for i in items:
+            #print(i[0])
+            if i[0] not in temp:
+                temp[i[0]] = [i[1]]
+            else:
+                temp[i[0]].append(i[1])
+        for k,v in temp.items():
+            v.sort()
+            v = v[::-1]
+            output.append([k,sum(v[:5])//5])
+        print(temp)
+        output.sort()
+        return output
