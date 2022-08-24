@@ -856,3 +856,18 @@ class Solution(object):
         for i in range(len(indices)):
             temp[indices[i]] = s[i]
         return "".join(temp)
+# 867. Transpose Matrix
+class Solution(object):
+    def transpose(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        temp = [[0 for j in range(len(matrix))] for i in range(len(list(zip(*matrix))))]
+        for i in range(len(list(zip(*matrix)))):
+            for j in range(len(matrix)):
+                # print([i,j])
+                temp[i][j] = matrix[j][i]
+        print(len(matrix))
+        print(len(list(zip(*matrix))))
+        return temp
