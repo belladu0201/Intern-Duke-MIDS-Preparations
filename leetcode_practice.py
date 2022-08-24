@@ -880,3 +880,24 @@ class Solution:
             n /= 3
         return n == 1
         
+# 2176. Count Equal and Divisible Pairs in an Array
+class Solution:
+    def countPairs(self, nums: List[int], k: int) -> int:
+        ct = 0
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i] == nums[j] and i * j % k == 0:
+                    ct += 1
+        return ct
+        # ct = 0
+        # for i in range(len(nums)):
+        #     if nums[i] not in temp:
+        #         temp[nums[i]] = [i]
+        #     else:
+        #         temp[nums[i]].append(i)
+        # for key,v in temp.items():
+        #     if len(v) == 2:
+        #         if (v[0]*v[1]) % k == 0:
+        #             ct += 1
+        # print(temp)
+        # return ct
