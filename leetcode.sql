@@ -77,3 +77,9 @@ FROM Warehouse
 INNER JOIN Products
 ON Warehouse.product_id = Products.product_id
 GROUP BY Warehouse.name
+
+-- 182. Duplicate Emails
+# Write your MySQL query statement below
+SELECT email as Email from Person
+Group By email
+having count(Email) > 1
