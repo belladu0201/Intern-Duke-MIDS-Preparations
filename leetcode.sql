@@ -102,3 +102,10 @@ DELETE a from Person a
 Inner Join Person b
 ON a.email = b.email
 WHERE a.id > b.id
+-- ###########
+# Please write a DELETE statement and DO NOT write a SELECT statement.
+# Write your MySQL query statement below
+DELETE a
+FROM Person a, Person b
+-- compare two table, make sure their email address same, we need to delete the one with higher id
+where a.email = b.email and a.id > b.id
