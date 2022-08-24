@@ -115,3 +115,10 @@ where a.email = b.email and a.id > b.id
 SELECT a.id
 FROM Weather a, Weather b
 WHERE datediff(a.recordDate, b.recordDate) = 1 and a.temperature > b.temperature
+
+-- 511. Game Play Analysis I
+# Write your MySQL query statement below
+SELECT DISTINCT player_id, min(event_date) as first_login
+FROM Activity
+GROUP BY player_id
+-- ORDER BY (event_date) ASC
