@@ -871,3 +871,12 @@ class Solution(object):
         print(len(matrix))
         print(len(list(zip(*matrix))))
         return temp
+# 326. Power of Three
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        # if n == 1: return True
+        if abs(n) < 1: return False
+        while n % 3 == 0:
+            n /= 3
+        return n == 1
+        
