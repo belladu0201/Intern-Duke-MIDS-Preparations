@@ -122,3 +122,16 @@ SELECT DISTINCT player_id, min(event_date) as first_login
 FROM Activity
 GROUP BY player_id
 -- ORDER BY (event_date) ASC
+
+-- 512. Game Play Analysis II
+# Write your MySQL query statement below
+SELECT player_id, device_id
+FROM Activity
+WHERE (event_date, player_id) in (SELECT  
+                                        MIN(event_date), 
+                                        player_id 
+                                  FROM activity 
+                                  GROUP BY player_id)
+-- GROUP BY player_id
+-- ORDER BY event_date ASC
+-- having min(event_date)
