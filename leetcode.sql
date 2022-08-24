@@ -109,3 +109,9 @@ DELETE a
 FROM Person a, Person b
 -- compare two table, make sure their email address same, we need to delete the one with higher id
 where a.email = b.email and a.id > b.id
+
+-- 197. Rising Temperature
+# Write your MySQL query statement below
+SELECT a.id
+FROM Weather a, Weather b
+WHERE datediff(a.recordDate, b.recordDate) = 1 and a.temperature > b.temperature
