@@ -919,3 +919,12 @@ class Solution:
         print(temp)
         output.sort()
         return output
+# 1025. Divisor Game
+class Solution:
+    def divisorGame(self, n: int) -> bool:
+        temp = n
+        ct = 0
+        while temp != 0:
+            temp -=1
+            ct +=1
+        return ct % 2 == 0
