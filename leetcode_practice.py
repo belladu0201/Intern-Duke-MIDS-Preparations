@@ -928,3 +928,19 @@ class Solution:
             temp -=1
             ct +=1
         return ct % 2 == 0
+# 62. Unique Paths
+class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+#         start = [0,0]
+#         target = [m,n]
+#         if start == target:
+#             return 1
+#         else:
+#             return self.uniquePaths(start[0]+1, start[1]) + self.uniquePaths(start[0], start[1]+1)
+
+        temp = [[1] * n for i in range(m)]
+    
+        for i in range(1,m):
+            for j in range(1,n):
+                temp[i][j] = temp[i][j-1] + temp[i-1][j]
+        return temp[m-1][n-1]
