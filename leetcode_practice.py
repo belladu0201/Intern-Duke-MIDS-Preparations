@@ -944,3 +944,23 @@ class Solution:
             for j in range(1,n):
                 temp[i][j] = temp[i][j-1] + temp[i-1][j]
         return temp[m-1][n-1]
+# 383. Ransom Note
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        temp = {}
+        mag = {}
+        for i in ransomNote:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for i in magazine:
+            if i not in mag:
+                mag[i] = 1
+            else:
+                mag[i] += 1
+        ct = 0
+        for k,v in temp.items():
+            if k in mag.keys() and v <= mag[k]:
+                ct += 1
+        return ct == len(temp)
