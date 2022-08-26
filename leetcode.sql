@@ -135,3 +135,9 @@ WHERE (event_date, player_id) in (SELECT
 -- GROUP BY player_id
 -- ORDER BY event_date ASC
 -- having min(event_date)
+
+-- 584. Find Customer Referee
+# Write your MySQL query statement below
+SELECT name
+FROM Customer
+where referee_id != 2 or referee_id is null
