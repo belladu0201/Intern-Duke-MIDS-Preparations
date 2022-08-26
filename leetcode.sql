@@ -153,11 +153,14 @@ where referee_id != 2 or referee_id is null
 --# FROM Orders
 --# ORDER BY customer_number DESC
 --# LIMIT 1;
-
-
 SELECT customer_number
 FROM (SELECT customer_number,count(order_number) as c 
 FROM Orders
 GROUP BY customer_number)x
 ORDER BY c DESC
 LIMIT 1;
+
+-- 596. Classes More Than 5 Students
+# Write your MySQL query statement below
+SELECT class FROM (SELECT class, COUNT(student) FROM Courses
+                  GROUP BY class having COUNT(student) >= 5) x
