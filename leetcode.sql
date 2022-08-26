@@ -141,3 +141,23 @@ WHERE (event_date, player_id) in (SELECT
 SELECT name
 FROM Customer
 where referee_id != 2 or referee_id is null
+
+
+-- 586. Customer Placing the Largest Number of Orders
+# Write your MySQL query statement below
+-- SELECT max(customer_number) as customer_number
+-- FROM Orders
+-- LIMIT 1;
+
+--# SELECT customer_number
+--# FROM Orders
+--# ORDER BY customer_number DESC
+--# LIMIT 1;
+
+
+SELECT customer_number
+FROM (SELECT customer_number,count(order_number) as c 
+FROM Orders
+GROUP BY customer_number)x
+ORDER BY c DESC
+LIMIT 1;
