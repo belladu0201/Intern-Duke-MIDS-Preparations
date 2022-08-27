@@ -164,3 +164,10 @@ LIMIT 1;
 # Write your MySQL query statement below
 SELECT class FROM (SELECT class, COUNT(student) FROM Courses
                   GROUP BY class having COUNT(student) >= 5) x
+
+
+-- 603. Consecutive Available Seats
+# Write your MySQL query statement below
+SELECT DISTINCT c1.seat_id FROM Cinema c1, Cinema c2
+WHERE(abs(c1.seat_id - c2.seat_id) = 1) AND c1.free = 1 and c2.free = 1
+ORDER BY seat_id ASC
