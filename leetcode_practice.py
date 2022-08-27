@@ -971,3 +971,11 @@ class Solution:
     def maxProductDifference(self, nums: List[int]) -> int:
         nums.sort()
         return (nums[-2] * nums[-1]) - (nums[1] * nums[0])
+
+# 1732. Find the Highest Altitude
+class Solution:
+    def largestAltitude(self, gain: List[int]) -> int:
+        start = [0]
+        for i in gain:
+            start.append(start[-1] + i)
+        return max(start)
