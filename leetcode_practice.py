@@ -988,3 +988,13 @@ class Solution:
         # if target in nums:
         #     return nums.index(target)
         # return targetIndices(nums[nums.index(target)+1:], target)
+# 1351. Count Negative Numbers in a Sorted Matrix
+class Solution:
+    def countNegatives(self, grid: List[List[int]]) -> int:
+        # brute force method
+        ct = 0
+        for i in grid:
+            for j in i:
+                if j < 0:
+                    ct += 1
+        return ct
