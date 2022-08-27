@@ -171,3 +171,9 @@ SELECT class FROM (SELECT class, COUNT(student) FROM Courses
 SELECT DISTINCT c1.seat_id FROM Cinema c1, Cinema c2
 WHERE(abs(c1.seat_id - c2.seat_id) = 1) AND c1.free = 1 and c2.free = 1
 ORDER BY seat_id ASC
+
+
+-- 613. Shortest Distance in a Line
+# Write your MySQL query statement below
+SELECT MIN(abs(p1.x - p2.x)) as shortest from Point p1, Point p2
+WHERE p1.x != p2.x613. Shortest Distance in a Line
