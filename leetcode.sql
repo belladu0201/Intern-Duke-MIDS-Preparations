@@ -187,3 +187,7 @@ WHERE sales_id NOT IN (
     INNER JOIN Company
     ON Company.com_id = Orders.com_id and Company.name = 'RED'
 )
+
+-- 627. Swap Salary
+# Write your MySQL query statement below
+UPDATE salary SET sex = if(sex = 'm','f', 'm')
