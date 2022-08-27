@@ -177,3 +177,13 @@ ORDER BY seat_id ASC
 # Write your MySQL query statement below
 SELECT MIN(abs(p1.x - p2.x)) as shortest from Point p1, Point p2
 WHERE p1.x != p2.x613. Shortest Distance in a Line
+
+-- 607. Sales Person
+# Write your MySQL query statement below
+SELECT name 
+FROM SalesPerson
+WHERE sales_id NOT IN (
+    SELECT sales_id FROM Orders
+    INNER JOIN Company
+    ON Company.com_id = Orders.com_id and Company.name = 'RED'
+)
