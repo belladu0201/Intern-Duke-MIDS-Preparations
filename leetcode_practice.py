@@ -964,3 +964,10 @@ class Solution:
             if k in mag.keys() and v <= mag[k]:
                 ct += 1
         return ct == len(temp)
+
+    
+# 1913. Maximum Product Difference Between Two Pairs
+class Solution:
+    def maxProductDifference(self, nums: List[int]) -> int:
+        nums.sort()
+        return (nums[-2] * nums[-1]) - (nums[1] * nums[0])
