@@ -979,3 +979,12 @@ class Solution:
         for i in gain:
             start.append(start[-1] + i)
         return max(start)
+# 2089. Find Target Indices After Sorting Array
+class Solution:
+    def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        nums.sort()
+        ct = nums.count(target)
+        return [nums.index(target) + i for i in range(ct)]
+        # if target in nums:
+        #     return nums.index(target)
+        # return targetIndices(nums[nums.index(target)+1:], target)
