@@ -175,3 +175,38 @@ class Solution:
         #     return result + 1
         
         return result + 1
+# 1710. Maximum Units on a Truck
+class Solution:
+    def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:
+#         temp = {}
+#         for i in boxTypes:
+#             if i[1] not in temp:
+#                 temp[i[1]] = i[0]
+#             else:
+#                 temp[i[1]] += i[0]
+#         temp = sorted(temp.items())
+
+#         return temp
+    
+        ct = 0
+        output = 0
+        stop = []
+        boxTypes.sort(key= lambda x: x[1], reverse=True) #sorting the list by unit count
+        for i in boxTypes:
+            #print([i[0]])
+            if ct + i[0] <= truckSize:
+                output += i[0] * i[1]
+                #print([i[0]])
+                ct += i[0]
+                #print([output])
+                stop.append(boxTypes.index(i))
+            else: break
+        #print([ct,output])
+        print(stop[-1])
+        if ct < truckSize:
+        #if (stop[-1] + 1) < len(boxTypes):
+            print("---------")
+            #print([ct,truckSize,output,stop])
+            #print(boxTypes[boxTypes[stop[-1]] + 1])
+            #output += (truckSize - ct) * (boxTypes[boxTypes[stop[-1] + 1]][1])
+        return output
