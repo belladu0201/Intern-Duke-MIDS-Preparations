@@ -191,3 +191,9 @@ WHERE sales_id NOT IN (
 -- 627. Swap Salary
 # Write your MySQL query statement below
 UPDATE salary SET sex = if(sex = 'm','f', 'm')
+
+-- 2026. Low-Quality Problems
+# Write your MySQL query statement below
+SELECT problem_id FROM Problems
+WHERE (likes/(likes + dislikes)) * 100 < 60
+ORDER BY problem_id ASC
