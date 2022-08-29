@@ -197,3 +197,9 @@ UPDATE salary SET sex = if(sex = 'm','f', 'm')
 SELECT problem_id FROM Problems
 WHERE (likes/(likes + dislikes)) * 100 < 60
 ORDER BY problem_id ASC
+
+-- 1821. Find Customers With Positive Revenue this Year
+# Write your MySQL query statement below
+SELECT customer_id
+FROM Customers
+WHERE year = 2021 and revenue > 0
