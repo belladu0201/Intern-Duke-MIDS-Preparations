@@ -998,3 +998,18 @@ class Solution:
                 if j < 0:
                     ct += 1
         return ct
+# 557. Reverse Words in a String III
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s = s.split(' ')
+        temp = ""
+        # l,r = 0,len(s)-1
+        # while l <= r:
+        #     temp[l],temp[r] = temp[r],temp[l]
+        #     l += 1
+        #     r -=1
+        # return "".join(temp)
+        for i in range(0,len(s)):
+            temp += s[i][::-1]
+            temp += " "
+        return temp[:-1]
