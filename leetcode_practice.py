@@ -1143,3 +1143,6 @@ class Solution:
                 ct.append(i)
         
         return len(temp[ct[-1]])
+    #     def lengthOfLastWord(self, s: str) -> int:
+        temp = s.split(" ")
+        return len(s.split().pop())
