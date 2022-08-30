@@ -1093,3 +1093,22 @@ class Solution:
         temp.append(head.val)
         return temp == temp[::-1]
             
+# 680. Valid Palindrome II
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+                    
+        def recursive_palindrom(s,l,r):
+            while l < r:
+                if s[l] != s[r]:
+                    return False
+                else:
+                    l += 1
+                    r -= 1
+            return True
+        l,r = 0, len(s) - 1
+        while l < r:
+            if s[l] != s[r]:
+                return recursive_palindrom(s,l,r-1) or recursive_palindrom(s,l+1,r)
+            l +=1
+            r -=1
+        return True
