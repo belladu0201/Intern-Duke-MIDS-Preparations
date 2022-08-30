@@ -1044,3 +1044,23 @@ class Solution:
         # temp.sort()
         # return temp
         return sorted([i**2 for i in nums])
+######## TWO POINTER SOLUTION ###########
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        # temp = [i**2 for i in nums]
+        # temp.sort()
+        # return temp
+        
+        # return sorted([i**2 for i in nums])
+        
+        result = [0] * len(nums)
+        l,r = 0,len(nums) - 1
+        for i in range(len(result)-1,-1,-1):
+            if abs(nums[l]) > abs(nums[r]):
+                curr = abs(nums[l])
+                l +=1
+            else:
+                curr = abs(nums[r])
+                r -=1
+            result[i] = curr **2
+        return result
