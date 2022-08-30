@@ -1078,3 +1078,18 @@ class Solution:
             for i in range(r-l):
                 result += word2[min(l,r) + i]
         return result
+# 234. Palindrome Linked List
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        temp = []
+        while head.next != None:
+            temp.append(head.val)
+            head = head.next
+        temp.append(head.val)
+        return temp == temp[::-1]
+            
