@@ -1146,3 +1146,17 @@ class Solution:
     #     def lengthOfLastWord(self, s: str) -> int:
         temp = s.split(" ")
         return len(s.split().pop())
+# 1876. Substrings of Size Three with Distinct Characters
+class Solution:
+    def countGoodSubstrings(self, s: str) -> int:
+        l,r = 0,3
+        ct = 0
+        temp = []
+        while r <= len(s):
+            temp.append(s[l:r])
+            l+=1
+            r+=1
+        for i in temp:
+            if len(list(i)) == len(list(set(i))):
+                ct += 1
+        return ct
