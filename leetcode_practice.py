@@ -1064,3 +1064,17 @@ class Solution:
                 r -=1
             result[i] = curr **2
         return result
+# 1768. Merge Strings Alternately
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        l,r = len(word1), len(word2)
+        result = ""
+        for i in range(min(l,r)):
+            result += word1[i] + word2[i]
+        if l > r:
+            for i in range(l-r):
+                result += word1[min(l,r) + i]
+        else:
+            for i in range(r-l):
+                result += word2[min(l,r) + i]
+        return result
