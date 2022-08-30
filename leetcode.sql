@@ -216,3 +216,12 @@ GROUP BY sell_date
 SELECT *
 FROM Olympic
 ORDER BY gold_medals desc,silver_medals desc,bronze_medals desc, country asc
+
+-- 1581. Customer Who Visited but Did Not Make Any Transactions
+# Write your MySQL query statement below
+select
+customer_id, count(distinct visit_id) as count_no_trans
+FROM
+Visits
+where visit_id not in (select visit_id from transactions)
+group by 1
