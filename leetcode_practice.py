@@ -1122,3 +1122,24 @@ class Solution:
             max_units += unit * min(truckSize - cur_size, num_box)
             cur_size += min(truckSize - cur_size, num_box)
         return max_units
+# 58. Length of Last Word
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        temp = s.split(" ")
+        # result = []
+        # for i in temp:
+        #     for j in i:
+        #         if j is 
+        #         if j == " " or j == "":
+        #             break
+        #     print([i])
+        #     result.append(i)
+        # print(result)
+        # return len(result[-1])
+        ct = []
+        temp1 = [i.isalpha() for i in temp]
+        for i in range(len(temp1)):
+            if temp1[i] == True:
+                ct.append(i)
+        
+        return len(temp[ct[-1]])
