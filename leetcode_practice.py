@@ -1037,3 +1037,10 @@ class Solution:
             else:
                 return 2
         return 1
+# 977. Squares of a Sorted Array
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        # temp = [i**2 for i in nums]
+        # temp.sort()
+        # return temp
+        return sorted([i**2 for i in nums])
