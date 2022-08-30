@@ -203,3 +203,10 @@ ORDER BY problem_id ASC
 SELECT customer_id
 FROM Customers
 WHERE year = 2021 and revenue > 0
+
+-- 1484. Group Sold Products By The Date
+# Write your MySQL query statement below
+select sell_date, count(distinct product) as num_sold,
+group_concat(distinct product order by product) as products
+FROM Activities
+GROUP BY sell_date
