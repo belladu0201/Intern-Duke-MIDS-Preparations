@@ -1025,3 +1025,15 @@ class Solution:
             r -=1
         curr = "".join(temp)
         return ' '.join(curr.split(" ")[::-1])
+# 1332. Remove Palindromic Subsequences
+class Solution:
+    def removePalindromeSub(self, s: str) -> int:
+        l,r = 0,len(s)-1
+        s = [i for i in s]
+        while l < r:
+            if s[l] == s[r]:
+                l += 1
+                r -= 1
+            else:
+                return 2
+        return 1
