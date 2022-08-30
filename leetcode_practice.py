@@ -1013,3 +1013,15 @@ class Solution:
             temp += s[i][::-1]
             temp += " "
         return temp[:-1]
+# ####### two pointer ############ #
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        #s = s.split(' ')
+        temp = [i for i in s]
+        l,r = 0,len(s)-1
+        while l <= r:
+            temp[l],temp[r] = temp[r],temp[l]
+            l += 1
+            r -=1
+        curr = "".join(temp)
+        return ' '.join(curr.split(" ")[::-1])
