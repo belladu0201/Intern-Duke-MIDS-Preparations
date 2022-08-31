@@ -1184,3 +1184,7 @@ class Solution:
         if True in temp:
             return words[temp.index(True)]
         return ""
+#             for word in words:
+#             if word[0::] == word[::-1]:
+#                 return word
+#         return ""
