@@ -1202,3 +1202,17 @@ class Solution:
             l += 1
             r -= 1
         return "".join(word)
+# 349. Intersection of Two Arrays
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        temp = {}
+        output  = []
+        for i in nums1:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for i in nums2:
+            if i in temp.keys():
+                output.append(i)
+        return list(set(output))
