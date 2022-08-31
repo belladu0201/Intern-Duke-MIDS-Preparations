@@ -233,3 +233,21 @@ FROM
 Visits
 where visit_id not in (select visit_id from transactions)
 group by customer_id
+
+
+-- 1327. List the Products Ordered in a Period
+# Write your MySQL query statement below
+# SELECT product_name,unit
+# FROM Products
+# JOIN Orders
+# ON
+# Products.product_id = Orders.product_id
+# WHERE Orders.unit >= 100 and date_format(order_date, '%Y-%m')='2020-02'
+
+
+
+select product_name, sum(unit) unit
+from orders join products using(product_id)
+where date_format(order_date, '%Y-%m')='2020-02'
+group by product_id
+having unit>=100
