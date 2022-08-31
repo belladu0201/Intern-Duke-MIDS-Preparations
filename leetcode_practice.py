@@ -1167,3 +1167,20 @@ class Solution:
             if len(set([s[i],s[i+1],s[i+2]])) == 3:
                 count+=1
         return count
+# 2108. Find First Palindromic String in the Array
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        def find_pali(i):
+            l,r = 0,len(i)-1
+            while l <= r:
+                if i[l] != i[r]:
+                    return False
+                l += 1
+                r -=1
+            return True
+        temp = []
+        for i in words:
+            temp.append(find_pali(i))
+        if True in temp:
+            return words[temp.index(True)]
+        return ""
