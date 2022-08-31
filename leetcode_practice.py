@@ -1188,3 +1188,17 @@ class Solution:
 #             if word[0::] == word[::-1]:
 #                 return word
 #         return ""
+
+
+# 2000. Reverse Prefix of Word
+class Solution:
+    def reversePrefix(self, word: str, ch: str) -> str:
+        if ch not in word: return word
+        idx = word.index(ch)
+        word = [i for i in word]
+        l,r = 0,idx
+        while l <= r:
+            word[l],word[r] = word[r],word[l]
+            l += 1
+            r -= 1
+        return "".join(word)
