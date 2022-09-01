@@ -1216,3 +1216,23 @@ class Solution:
             if i in temp.keys():
                 output.append(i)
         return list(set(output))
+# 1380. Lucky Numbers in a Matrix
+class Solution:
+    def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
+        candidates1 = [min(i) for i in matrix]
+        candidates2 = []
+        # for i in range(len(matrix)):
+        #     temp = []
+        #     for j in range(len(matrix[i])):
+        #         temp.append(matrix[i][j])
+        #     candidates2.append(max(temp))
+        #print([len(matrix),len(matrix[0])]) row by col
+        for i in range(len(matrix[0])):
+            # loop through each column
+            temp = []
+            for j in range(len(matrix)):
+                # loop through each row no.
+                temp.append(matrix[j][i])
+            candidates2.append(max(temp))
+        #print([candidates1,candidates2])
+        return list(set(candidates1) & set(candidates2))
