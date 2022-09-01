@@ -1236,3 +1236,14 @@ class Solution:
             candidates2.append(max(temp))
         #print([candidates1,candidates2])
         return list(set(candidates1) & set(candidates2))
+# 492. Construct the Rectangle
+class Solution:
+    def constructRectangle(self, area: int) -> List[int]:
+        L = W = int(math.sqrt(area))
+        
+        while L*W != area:
+            if L*W < area:
+                L += 1
+            else:
+                W -=1
+        return [L,W]
