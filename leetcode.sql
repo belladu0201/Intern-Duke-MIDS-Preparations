@@ -251,3 +251,10 @@ from orders join products using(product_id)
 where date_format(order_date, '%Y-%m')='2020-02'
 group by product_id
 having unit>=100
+
+
+-- 1148. Article Views I
+# Write your MySQL query statement below
+SELECT distinct author_id as id FROM Views
+WHERE author_id = viewer_id
+ORDER BY id
