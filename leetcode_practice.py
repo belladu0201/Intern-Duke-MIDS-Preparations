@@ -1247,3 +1247,13 @@ class Solution:
             else:
                 W -=1
         return [L,W]
+# 231. Power of Two
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        if n == 1: return True
+        if n <= 0: return False
+        while n > 1:
+            if int(n % 2) != 0:
+                return False
+            n /= 2
+        return True
