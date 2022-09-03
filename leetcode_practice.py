@@ -1267,3 +1267,17 @@ class Solution:
             ct += 1
             temp += ct
         return ct-1
+# 2206. Divide Array Into Equal Pairs
+class Solution:
+    def divideArray(self, nums: List[int]) -> bool:
+        temp = {}
+        want = len(nums) // 2
+        for i in nums:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+            if temp[i] == 2:
+                temp[i] = 0
+                want -=1
+        return want == 0
