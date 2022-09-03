@@ -267,3 +267,13 @@ ORDER BY total)
 
 SELECT seller_id FROM CTE
 WHERE total = (select max(total) from CTE)
+
+-- 1565. Unique Orders and Customers Per Month
+# Write your MySQL query statement below
+with cte as(
+    select date_format(order_date, "%Y-%m") as month, order_id, customer_id
+    from Orders
+    where invoice > 20
+)
+select month, count(distinct order_id) as order_count, count(distinct customer_id ) as customer_count from cte
+group by month
