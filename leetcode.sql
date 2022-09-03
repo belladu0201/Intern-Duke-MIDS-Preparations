@@ -277,3 +277,7 @@ with cte as(
 )
 select month, count(distinct order_id) as order_count, count(distinct customer_id ) as customer_count from cte
 group by month
+
+-- 1173. Immediate Food Delivery I
+# Write your MySQL query statement below
+select round(sum(customer_pref_delivery_date = order_date) / count(delivery_id) * 100,2) as immediate_percentage from Delivery
