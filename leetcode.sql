@@ -286,3 +286,13 @@ select round(sum(customer_pref_delivery_date = order_date) / count(delivery_id) 
 # Write your MySQL query statement below
 select count(distinct customer_id) as rich_count from Store
 where amount > 500
+
+-- 1421. NPV Queries
+# Write your MySQL query statement below
+-- SELECT NPV.id, NPV.year,ifnull(npv,0) as npv FROM NPV
+-- RIGHT JOIN  Queries using (id,year)
+-- ON NPV.id = Queries.id and  NPV.year = Queries.year
+
+select q.id, q.year, ifnull(npv,0) as npv
+from Queries q
+left join NPV n using(id,year)
