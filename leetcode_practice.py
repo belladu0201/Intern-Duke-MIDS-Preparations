@@ -1296,3 +1296,16 @@ class Solution:
                 output += k
         return output
         
+# 1742. Maximum Number of Balls in a Box
+class Solution:
+    def countBalls(self, lowLimit: int, highLimit: int) -> int:
+        ans = {}
+        for i in range(lowLimit,highLimit+1):
+            temp = sum([int(j) for j in str(i)])
+            if temp not in ans:
+                ans[temp] = 1
+            else:
+                ans[temp] += 1
+        # for k,v in ans.items():
+        #     if v == max(ans.values()):
+        return max(ans.values())
