@@ -1327,3 +1327,16 @@ class Solution:
         if len(ans) < k-1: return ""
         
         return ans[k-1]
+# 2248. Intersection of Multiple Arrays
+class Solution:
+    def intersection(self, nums: List[List[int]]) -> List[int]:
+        # if len(nums) <= 1:
+        #     return []
+        temp = set(nums[0])
+        for i in range(1,len(nums)):
+            temp = temp.intersection(nums[i])
+        return sorted(temp)
+        # def find_intersection(a,b):
+        #     return list(set(a)) & list(set(b))
+        # for i in range(len(nums)-1):
+        #     find_intersection(nums[i],nums[i+1])
