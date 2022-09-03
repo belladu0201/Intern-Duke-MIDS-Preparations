@@ -1281,3 +1281,18 @@ class Solution:
                 temp[i] = 0
                 want -=1
         return want == 0
+# 1748. Sum of Unique Elements
+class Solution:
+    def sumOfUnique(self, nums: List[int]) -> int:
+        temp = {}
+        output = 0
+        for i in nums:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for k,v in temp.items():
+            if v == 1:
+                output += k
+        return output
+        
