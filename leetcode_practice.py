@@ -1257,3 +1257,13 @@ class Solution:
                 return False
             n /= 2
         return True
+# 441. Arranging Coins
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        # 1 3 6 10 15 21
+        ct = 0
+        temp = 0
+        while temp <= n:
+            ct += 1
+            temp += ct
+        return ct-1
