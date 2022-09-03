@@ -258,3 +258,12 @@ having unit>=100
 SELECT distinct author_id as id FROM Views
 WHERE author_id = viewer_id
 ORDER BY id
+
+-- 1082. Sales Analysis I
+# Write your MySQL query statement below
+WITH CTE as (SELECT seller_id, sum(price) as total from Sales
+GROUP BY seller_id
+ORDER BY total)
+
+SELECT seller_id FROM CTE
+WHERE total = (select max(total) from CTE)
