@@ -281,3 +281,8 @@ group by month
 -- 1173. Immediate Food Delivery I
 # Write your MySQL query statement below
 select round(sum(customer_pref_delivery_date = order_date) / count(delivery_id) * 100,2) as immediate_percentage from Delivery
+
+-- 2082. The Number of Rich Customers
+# Write your MySQL query statement below
+select count(distinct customer_id) as rich_count from Store
+where amount > 500
