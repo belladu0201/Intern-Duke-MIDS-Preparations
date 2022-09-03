@@ -1309,3 +1309,21 @@ class Solution:
         # for k,v in ans.items():
         #     if v == max(ans.values()):
         return max(ans.values())
+# 2053. Kth Distinct String in an Array
+class Solution:
+    def kthDistinct(self, arr: List[str], k: int) -> str:
+        temp = {}
+        for i in arr:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] +=1
+        ans = []
+        for k1,v in temp.items():
+            if v == 1:
+                ans.append(k1)
+        print(ans)
+        if len(ans) == 0: return ""
+        if len(ans) < k-1: return ""
+        
+        return ans[k-1]
