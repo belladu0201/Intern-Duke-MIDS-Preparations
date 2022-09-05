@@ -1340,3 +1340,20 @@ class Solution:
         #     return list(set(a)) & list(set(b))
         # for i in range(len(nums)-1):
         #     find_intersection(nums[i],nums[i+1])
+# 219. Contains Duplicate II
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        # hashmap
+        temp = {}
+        for idx,e in enumerate(nums):
+            if e in temp and abs(idx-temp[e]) <= k:
+                return True
+            temp[e] = idx
+            #print([idx,e])
+        return False
+        # Time Limit Exceed
+        # for i in range(len(nums)-1):
+        #     for j in range(i+1, i+2+k):
+        #         if nums[i] == nums[j] and abs(i-j) <= k:
+        #             return True
+        # return False
