@@ -1449,3 +1449,18 @@ class Solution:
             if v % 2 !=0:
                 ct += 1
         return ct == 1 or ct == 0
+# 278. First Bad Version
+# The isBadVersion API is already defined for you.
+# def isBadVersion(version: int) -> bool:
+
+class Solution:
+    def firstBadVersion(self, n: int) -> int:
+        l,r = 1,n
+        while (l < r):
+            m = l + (r-l) // 2
+            if isBadVersion(m):
+                r = m
+            else:
+                l = m + 1
+                
+        return l
