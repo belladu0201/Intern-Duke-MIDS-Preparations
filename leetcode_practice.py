@@ -1405,3 +1405,12 @@ class Solution:
                     #print([i,j])
                     output.append(abs(temp[i]-temp[j]))
         return min(output)
+# 246. Strobogrammatic Number
+class Solution:
+    def isStrobogrammatic(self, num: str) -> bool:
+        hashmap = {'0':'0', '1':'1', '8':'8', '6':'9', '9':'6'}
+        temp = ""
+        for i in num[::-1]:
+            if i in hashmap:
+                temp += hashmap[i]
+        return temp == num
