@@ -1414,3 +1414,12 @@ class Solution:
             if i in hashmap:
                 temp += hashmap[i]
         return temp == num
+# 252. Meeting Rooms
+class Solution:
+    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
+        # this is very similar to dsc20 or 30 homework questions
+        intervals.sort()
+        for i in range(len(intervals) - 1):
+            if intervals[i][1] > intervals[i+1][0]:
+                return False
+        return True
