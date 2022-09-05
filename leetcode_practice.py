@@ -1435,3 +1435,17 @@ class Solution:
             n /= 5
             
         return n == 1
+# 266. Palindrome Permutation
+class Solution:
+    def canPermutePalindrome(self, s: str) -> bool:
+        hmap = {}
+        for i in s:
+            if i not in hmap:
+                hmap[i] = 1
+            else:
+                hmap[i] += 1
+        ct = 0
+        for v in hmap.values():
+            if v % 2 !=0:
+                ct += 1
+        return ct == 1 or ct == 0
