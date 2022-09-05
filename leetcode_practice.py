@@ -1464,3 +1464,15 @@ class Solution:
                 l = m + 1
                 
         return l
+# 293. Flip Game
+class Solution:
+    def generatePossibleNextMoves(self, currentState: str) -> List[str]:
+        output = []
+        for i in range(len(currentState) - 1):
+            temp = "".join([i for i in currentState])
+            if currentState[i] == '+' and currentState[i+1]== '+':
+                temp = temp[:i] + temp[i].replace('+','-') + temp[i+1:]
+                temp = temp[:i+1] + temp[i+1].replace('+','-') + temp[i+2:]
+            #print(temp[i])
+                output.append(temp)
+        return output
