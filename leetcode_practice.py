@@ -1389,3 +1389,19 @@ class Solution:
             else:
                 result[i] += 1
         return temp == result
+# 243. Shortest Word Distance
+class Solution:
+    def shortestDistance(self, wordsDict: List[str], word1: str, word2: str) -> int:
+        #temp = [abs(wordsDict.index(word1) - wordsDict.index(word2))]
+        temp = []
+        output = []
+        for i in range(len(wordsDict)):
+            if wordsDict[i] == word1 or wordsDict[i] == word2:
+                temp.append(i)
+        print(temp)
+        for i in range(len(temp)-1):
+            for j in range(i+1, len(temp)):
+                if wordsDict[temp[i]] != wordsDict[temp[j]]:
+                    #print([i,j])
+                    output.append(abs(temp[i]-temp[j]))
+        return min(output)
