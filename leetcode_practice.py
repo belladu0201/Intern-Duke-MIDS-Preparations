@@ -1357,3 +1357,19 @@ class Solution:
         #         if nums[i] == nums[j] and abs(i-j) <= k:
         #             return True
         # return False
+# 83. Remove Duplicates from Sorted List
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        temp = head
+        lst = []
+        while temp != None and temp.next != None:
+            if temp.next.val == temp.val:
+                temp.next = temp.next.next
+            else:
+                temp = temp.next
+        return head
