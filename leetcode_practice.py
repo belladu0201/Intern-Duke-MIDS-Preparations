@@ -1373,3 +1373,19 @@ class Solution:
             else:
                 temp = temp.next
         return head
+# 242. Valid Anagram
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        temp = {}
+        result = {}
+        for i in s:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for i in t:
+            if i not in result:
+                result[i] = 1
+            else:
+                result[i] += 1
+        return temp == result
