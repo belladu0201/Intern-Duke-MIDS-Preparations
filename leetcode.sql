@@ -323,3 +323,10 @@ select max(num) as num from (
 SELECT * from Cinema
 where mod(id,2) = 1 and description != 'boring'
 ORDER BY rating desc
+
+-- 1050. Actors and Directors Who Cooperated At Least Three Times
+# Write your MySQL query statement below
+select actor_id,director_id
+from ActorDirector
+GROUP BY actor_id,director_id
+having count(timestamp) >= 3
