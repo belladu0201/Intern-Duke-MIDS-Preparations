@@ -343,3 +343,10 @@ on Sales.product_id = Product.product_id
 SELECT product_id, sum(quantity) as total_quantity
 FROM Sales
 GROUP BY product_id
+
+-- 1075. Project Employees I
+# Write your MySQL query statement below
+SELECT project_id, ROUND(sum(experience_years)/ count(experience_years),2) as average_years FROM Project
+JOIN Employee
+ON Project.employee_id = Employee.employee_id
+GROUP BY project_id
