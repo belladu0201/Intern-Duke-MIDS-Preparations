@@ -318,3 +318,8 @@ select max(num) as num from (
 #         MyNumbers
 #     GROUP BY num
 #     HAVING COUNT(num) = 1) AS t;
+-- 620. Not Boring Movies
+# Write your MySQL query statement below
+SELECT * from Cinema
+where mod(id,2) = 1 and description != 'boring'
+ORDER BY rating desc
