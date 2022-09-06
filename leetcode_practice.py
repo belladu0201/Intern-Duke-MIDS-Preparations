@@ -133,7 +133,7 @@ class Solution(object):
         return [nums[i] for i in nums]
         
 #2236. Root Equals Sum of Children
- class Solution(object):
+class Solution(object):
     def checkTree(self, root):
         """
         :type root: Optional[TreeNode]
@@ -407,22 +407,20 @@ class Solution:
 
     # 202. Happy Number
     class Solution:
-    def isHappy(self, n: int) -> bool:
-    
-        
-        def sos(n):
-            temp = 0
-            for i in range(len(str(n))):
-                temp += int(str(n)[i])**2
-            return temp
-        
-        visit = set()
-        while n not in visit:
-            visit.add(n)
-            n = sos(n)
-            if n == 1:
-                return True
-        return False
+        def isHappy(self, n: int) -> bool:
+            def sos(n):
+                temp = 0
+                for i in range(len(str(n))):
+                    temp += int(str(n)[i])**2
+                return temp
+            
+            visit = set()
+            while n not in visit:
+                visit.add(n)
+                n = sos(n)
+                if n == 1:
+                    return True
+            return False
         
 # 205. Isomorphic Strings
 # mapping with dictionary
