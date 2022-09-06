@@ -337,3 +337,9 @@ SELECT Product.product_name, year,price
 FROM Sales
 JOIN Product
 on Sales.product_id = Product.product_id
+
+-- 1069. Product Sales Analysis II
+# Write your MySQL query statement below
+SELECT product_id, sum(quantity) as total_quantity
+FROM Sales
+GROUP BY product_id
