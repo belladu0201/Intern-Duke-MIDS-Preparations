@@ -330,3 +330,10 @@ select actor_id,director_id
 from ActorDirector
 GROUP BY actor_id,director_id
 having count(timestamp) >= 3
+
+-- 1068. Product Sales Analysis I
+# Write your MySQL query statement below
+SELECT Product.product_name, year,price
+FROM Sales
+JOIN Product
+on Sales.product_id = Product.product_id
