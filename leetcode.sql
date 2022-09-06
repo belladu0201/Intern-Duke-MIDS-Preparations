@@ -350,3 +350,12 @@ SELECT project_id, ROUND(sum(experience_years)/ count(experience_years),2) as av
 JOIN Employee
 ON Project.employee_id = Employee.employee_id
 GROUP BY project_id
+
+-- 1076. Project Employees II
+# Write your MySQL query statement below
+with cte as
+(Select project_id,count(employee_id) as cnt from Project 
+ GROUP BY project_id) 
+select project_id
+FROM cte
+WHERE cnt IN (SELECT MAX(cnt) FROM cte)
