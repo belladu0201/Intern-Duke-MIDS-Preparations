@@ -1470,7 +1470,7 @@ class Solution:
         output = []
         for i in range(len(currentState) - 1):
             temp = "".join([i for i in currentState])
-            if currentState[i] == '+' and currentState[i+1]== '+':
+            if currentState[i] == '+' and currentState[i+1]== '+': 
                 temp = temp[:i] + temp[i].replace('+','-') + temp[i+1:]
                 temp = temp[:i+1] + temp[i+1].replace('+','-') + temp[i+2:]
             #print(temp[i])
@@ -1495,3 +1495,20 @@ class Solution:
             root.right = helper(m+1,right)
             return root
         return helper(0,len(nums)-1)
+#171. Excel Sheet Column Number
+class Solution:
+    def titleToNumber(self, columnTitle: str) -> int:
+        temp = 0
+        t = len(columnTitle)
+        for i in range(t):
+            temp = temp * 26
+            temp += (ord(columnTitle[i]) - ord('A') + 1)
+        return temp
+        # num_digit = len([i for i in columnTitle])
+        # #print(ord('A'))
+        # temp = ord(columnTitle[-1]) - 64
+        # #if num_digit == 1: return ord(columnTitle[-1]) - 64
+        # for i in range(1,num_digit):
+        #     temp += (i)*26 + ord(columnTitle[i]) - 64
+        #     print([temp])
+        # return temp
