@@ -13,12 +13,12 @@ class Solution:
  # second time writing this question, need to remember this algorithm  
 def maxProfit(self, prices: List[int]) -> int:
         min_val = prices[0]
-    diff = []
-    for i in prices:
-        cur = i
-        min_val = min(min_val,i)
-        diff.append(cur-min_val)
-    return max(diff)
+        diff = []
+        for i in prices:
+            cur = i
+            min_val = min(min_val,i)
+            diff.append(cur-min_val)
+        return max(diff)
 
 # 217. Contains Duplicate
 class Solution:
@@ -741,13 +741,13 @@ class Solution(object):
         return (temp1-1)*(temp2-1)
     ######## MIN HEAP SOLUTION FROM DISCUSSION #########
     class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
-        heap=[]
-        for i in nums:
-            heappush(heap,i)
-            if len(heap)>2:
-                heappop(heap)
-        return (heap[0]-1)*(heap[1]-1)
+        def maxProduct(self, nums: List[int]) -> int:
+            heap=[]
+            for i in nums:
+                heappush(heap,i)
+                if len(heap)>2:
+                    heappop(heap)
+            return (heap[0]-1)*(heap[1]-1)
 # 1266. Minimum Time Visiting All Points
 class Solution(object):
     def minTimeToVisitAllPoints(self, points):
