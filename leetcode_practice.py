@@ -1526,3 +1526,15 @@ class Solution:
         elif p.val != q.val:
             return False
         return self.isSameTree(p.right,q.right) and self.isSameTree(p.left,q.left)
+
+# 1859. Sorting the Sentence
+class Solution:
+    def sortSentence(self, s: str) -> str:
+        s = s.split(" ")
+        temp = ["" for i in range(len(s))]
+        print(s)
+        for i in range(len(s)):
+            #print(s[i][-1]) # 2 4 1 3
+            temp[int(s[i][-1]) - 1] = s[i][:-1]
+            #temp[s[i][-1] - 1] = s[i][:-1]
+        return " ".join(temp)
