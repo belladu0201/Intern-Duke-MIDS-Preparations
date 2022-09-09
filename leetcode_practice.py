@@ -1538,3 +1538,15 @@ class Solution:
             temp[int(s[i][-1]) - 1] = s[i][:-1]
             #temp[s[i][-1] - 1] = s[i][:-1]
         return " ".join(temp)
+
+# 1047. Remove All Adjacent Duplicates In String
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
+        # Use Stack to implement it
+        stack = []
+        for i in s:
+            if stack and i == stack[-1]:
+                stack.pop()
+            else:
+                stack.append(i)
+        return ''.join(stack)
