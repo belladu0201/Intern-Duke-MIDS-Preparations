@@ -1564,3 +1564,21 @@ class Solution:
             if v == 1:
                 return s.index(k)
         return -1
+
+
+# 290. Word Pattern
+class Solution:
+    def wordPattern(self, pattern: str, s: str) -> bool:
+        s = s.split(" ")
+        if len(pattern) != len(s): return False
+        dic = {}
+        for index in range(len(pattern)):
+            if pattern[index] not in dic:
+                if s[index] not in dic.values():
+                    dic[pattern[index]] = s[index]
+                else: return False
+            else:
+                if dic[pattern[index]] != s[index]:
+                    return False
+        return True
+    
