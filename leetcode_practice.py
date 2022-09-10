@@ -1581,4 +1581,18 @@ class Solution:
                 if dic[pattern[index]] != s[index]:
                     return False
         return True
-    
+
+ # 1002. Find Common Characters
+class Solution:
+    def commonChars(self, words: List[str]) -> List[str]:
+        ref= list(words[0]) 
+        
+        for word in words[1:]:
+            update_ref=[]
+            
+            for c in word:
+                if c in ref:
+                    update_ref.append(c)
+                    ref.remove(c)
+            ref = update_ref
+        return ref   
