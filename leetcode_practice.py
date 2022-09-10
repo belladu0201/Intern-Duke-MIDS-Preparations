@@ -1582,7 +1582,7 @@ class Solution:
                     return False
         return True
 
- # 1002. Find Common Characters
+# 1002. Find Common Characters
 class Solution:
     def commonChars(self, words: List[str]) -> List[str]:
         temp = list(words[0])
@@ -1594,3 +1594,19 @@ class Solution:
                     temp.remove(c)
             temp = new
         return temp
+
+# 345. Reverse Vowels of a String
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        temp = []
+        s = [i for i in s]
+        for i in range(len(s)):
+            if s[i] in ['a', 'e', 'i', 'o','u','A', 'E', 'I', 'O','U']:
+                temp.append(i)
+        # print(temp)
+        for i in temp:
+            if len(temp) >= 2:
+                s[temp[0]],s[temp[-1]] = s[temp[-1]],s[temp[0]]
+                temp = temp[1:-1]
+            
+        return ''.join(s)
