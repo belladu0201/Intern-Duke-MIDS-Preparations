@@ -1638,3 +1638,46 @@ class Solution:
             num.append(i[-1] - i[0] + 1)
             
         return min(num)
+
+# 566. Reshape the Matrix
+class Solution:
+    def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
+        row = len(mat) # 2 
+        col = len(mat[0]) # 4
+        if r*c != row * col: return mat
+        temp = []
+        for i in range(row):
+            for j in range(col):
+                print(mat[i][j])
+                temp.append(mat[i][j])
+        return [[temp.pop(0) for i in range(c)] for j in range(r)]
+        # output = []
+        # ct = 0
+        # if c >= r:
+        #     for i in range(c//r):
+        #         curr = []
+        #         if ct < len(temp):
+        #             for j in range(ct,ct+c//r):
+        #                 curr.append(temp[j])
+        #             ct += c//r
+        #             output.append(curr)
+        # else:
+        #     for i in range(r):
+        #         #print([i,i,i,i,i])
+        #         curr = []
+        #         if ct < len(temp):
+        #             for j in range(ct,ct+j):
+        #                 print([j])
+        #                 curr.append(temp[j])
+        #                 #print([curr,curr])
+        #             ct += j
+        #             output.append(curr)
+        
+        # ct = 0
+        # for i in range(r):
+        #     curr = []
+        #     for j in range(ct+1,ct + c//r, c//r):
+        #         curr.append(temp[j])
+        #     output.append(curr)
+        #     ct += c//r
+        return output
