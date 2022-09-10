@@ -1610,3 +1610,31 @@ class Solution:
                 temp = temp[1:-1]
             
         return ''.join(s)
+
+# 697. Degree of an Array
+class Solution:
+    def findShortestSubArray(self, nums: List[int]) -> int:
+        temp = {}
+        output = []
+        for i in nums:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for k,v in temp.items():
+            if v == max(temp.values()):
+                output.append(k)
+        print(output)
+        final = []
+        for j in output:
+            store = []
+            for i in range(len(nums)):
+                if nums[i] == j:
+                    store.append(i)
+            print(store)
+            final.append(store)
+        num = []
+        for i in final:
+            num.append(i[-1] - i[0] + 1)
+            
+        return min(num)
