@@ -1642,6 +1642,7 @@ class Solution:
 # 566. Reshape the Matrix
 class Solution:
     def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
+        # using queue to approach this question
         row = len(mat) # 2 
         col = len(mat[0]) # 4
         if r*c != row * col: return mat
@@ -1650,6 +1651,7 @@ class Solution:
             for j in range(col):
                 print(mat[i][j])
                 temp.append(mat[i][j])
+        # list comprehension
         return [[temp.pop(0) for i in range(c)] for j in range(r)]
         # output = []
         # ct = 0
