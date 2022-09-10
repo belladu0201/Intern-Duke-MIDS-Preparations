@@ -1550,3 +1550,17 @@ class Solution:
             else:
                 stack.append(i)
         return ''.join(stack)
+
+# 387. First Unique Character in a String
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        temp = {}
+        for i in s:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+        for k,v in temp.items():
+            if v == 1:
+                return s.index(k)
+        return -1
