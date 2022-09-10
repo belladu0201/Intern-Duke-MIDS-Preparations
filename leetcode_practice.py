@@ -1585,14 +1585,12 @@ class Solution:
  # 1002. Find Common Characters
 class Solution:
     def commonChars(self, words: List[str]) -> List[str]:
-        ref= list(words[0]) 
-        
-        for word in words[1:]:
-            update_ref=[]
-            
-            for c in word:
-                if c in ref:
-                    update_ref.append(c)
-                    ref.remove(c)
-            ref = update_ref
-        return ref   
+        temp = list(words[0])
+        for i in words[1:]:
+            new = []
+            for c in i:
+                if c in temp:
+                    new.append(c)
+                    temp.remove(c)
+            temp = new
+        return temp
