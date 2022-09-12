@@ -1683,3 +1683,17 @@ class Solution:
         #     output.append(curr)
         #     ct += c//r
         return output
+
+
+# 917. Reverse Only Letters
+class Solution:
+    def reverseOnlyLetters(self, s: str) -> str:
+        # using stack to solve problems
+        temp = [i for i in s if i.isalpha()]
+        ans = []
+        for i in s:
+            if i.isalpha():
+                ans.append(temp.pop())
+            else:
+                ans.append(i)
+        return "".join(ans)
