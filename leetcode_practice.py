@@ -1697,3 +1697,30 @@ class Solution:
             else:
                 ans.append(i)
         return "".join(ans)
+
+# 944. Delete Columns to Make Sorted
+class Solution:
+    def minDeletionSize(self, strs: List[str]) -> int:
+        ct = 0
+        for i in range(len(strs[0])):
+            column = list(j[i] for j in strs)
+            if column != sorted(column):
+                ct += 1
+        return ct
+        # 001020 012131 022232 032333
+        #curr = "".join([strs[i][j] for i in range(len(strs)) for j in  range(len(strs[0]))])
+        #curr = "".join([k[i] for i in range(len(strs[0])) for k in strs])
+        #curr = "".join([strs[i][j] for i in range(len(strs)) for j in range(len(strs[0]))])
+        # for i in strs:
+        #     if i != sorted(i):
+        #         ct += 1
+        # return ct
+        # start = 0
+        # end = len(strs[0])
+        # while end <= len(curr):
+        #     if curr[start:end] != "".join(sorted(curr[start:end])):
+        #         print([curr[start:end],sorted(curr[start:end])])
+        #         ct += 1
+        #     start += len(strs[0])
+        #     end += len(strs[0])
+        # return ct
