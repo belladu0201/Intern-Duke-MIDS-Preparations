@@ -1747,3 +1747,10 @@ class SparseVector:
 # v1 = SparseVector(nums1)
 # v2 = SparseVector(nums2)
 # ans = v1.dotProduct(v2)
+
+# 2161. Partition Array According to Given Pivot
+class Solution:
+    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        return [i for i in nums if i < pivot] + [i for i in nums if i == pivot] + [i for i in nums if i > pivot]
+        # pos = nums.index(pivot)
+        # l,r = 0,len(nums)-1
