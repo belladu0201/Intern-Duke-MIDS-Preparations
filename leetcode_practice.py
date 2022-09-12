@@ -1724,3 +1724,26 @@ class Solution:
         #     start += len(strs[0])
         #     end += len(strs[0])
         # return ct
+
+# Dot Product of Two Sparse Vectors
+class SparseVector:
+    def __init__(self, nums: List[int]):
+        self.array = nums
+        
+
+    # Return the dotProduct of two sparse vectors
+    def dotProduct(self, vec: 'SparseVector') -> int:
+        left,right = 0,len(vec.array)-1
+        add = 0
+        while left <= right:
+            add += self.array[left] * vec.array[left]
+            left += 1
+        return add
+            
+        
+        
+
+# Your SparseVector object will be instantiated and called as such:
+# v1 = SparseVector(nums1)
+# v2 = SparseVector(nums2)
+# ans = v1.dotProduct(v2)
