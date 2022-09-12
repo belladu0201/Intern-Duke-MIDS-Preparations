@@ -366,3 +366,10 @@ select machine_id,
 round(sum(if(activity_type='start', -timestamp, timestamp)) / count(distinct process_id),3) as processing_time
 from activity
 group by machine_id
+
+-- 1667. Fix Names in a Table
+# Write your MySQL query statement below
+SELECT user_id,CONCAT(UPPER(LEFT(name,1)), LOWER(RIGHT(name, LENGTH(name) - 1)))
+as name
+FROM Users
+ORDER BY user_id
