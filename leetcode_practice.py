@@ -1765,3 +1765,15 @@ class Solution:
             pair_sum = max(pair_sum, nums[i] + nums[max_idx])
             max_idx -= 1
         return pair_sum
+# 2149. Rearrange Array Elements by Sign
+class Solution:
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
+        p = [i for i in nums if i > 0]
+        q = [i for i in nums if i < 0]
+        l,r = 0, len(nums)//2 - 1
+        ans = []
+        while l <= r:
+            ans.append(p[l])
+            ans.append(q[l])
+            l += 1
+        return ans
