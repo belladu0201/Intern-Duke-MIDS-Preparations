@@ -1793,3 +1793,32 @@ class Solution:
             r-=1
             ct += 1
         return ans
+
+# 1382. Balance a Binary Search Tree
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def balanceBST(self, root: TreeNode) -> TreeNode:
+        # we need to use in order tranversal
+        ans = []
+        # Hint 1: Convert the tree to a sorted array using an in-order traversal.
+        def in_order(root):
+            if not root: return None
+            in_order(root.left)
+            ans.append(root.val)
+            in_order(root.right)
+        in_order(root)
+        # Hint 2: Construct a new balanced tree from the sorted array recursively.
+        def check_balance(ans):
+            if not ans: return None
+            m = len(ans) // 2
+            
+            root = TreeNode(ans[m])
+            root.left = check_balance(ans[:m])
+            root.right = check_balance(ans[m+1:])
+            return root
+        return check_balance(ans)
