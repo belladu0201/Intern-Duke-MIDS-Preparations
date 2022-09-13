@@ -1754,3 +1754,14 @@ class Solution:
         return [i for i in nums if i < pivot] + [i for i in nums if i == pivot] + [i for i in nums if i > pivot]
         # pos = nums.index(pivot)
         # l,r = 0,len(nums)-1
+
+# 1877. Minimize Maximum Pair Sum in Array
+class Solution:
+    def minPairSum(self, nums: List[int]) -> int:
+        nums.sort()
+        pair_sum = 0
+        max_idx = len(nums) - 1
+        for i in range(len(nums)//2):
+            pair_sum = max(pair_sum, nums[i] + nums[max_idx])
+            max_idx -= 1
+        return pair_sum
