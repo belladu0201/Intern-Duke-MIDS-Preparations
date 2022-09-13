@@ -1777,3 +1777,19 @@ class Solution:
             ans.append(q[l])
             l += 1
         return ans
+# 1874. Minimize Product Sum of Two Arrays
+class Solution:
+    def minProductSum(self, nums1: List[int], nums2: List[int]) -> int:
+        nums1.sort()
+        nums2.sort()
+        l,r = 0,len(nums1)-1
+        ans = 0
+        print([nums1,nums2])
+        ct = 0
+        while ct < (len(nums1)):
+            ans += nums1[l] * nums2[r]
+            #print(ans)
+            l+=1
+            r-=1
+            ct += 1
+        return ans
