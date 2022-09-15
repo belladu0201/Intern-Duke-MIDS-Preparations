@@ -1842,3 +1842,13 @@ class Solution:
             root.right = check_balance(ans[m+1:])
             return root
         return check_balance(ans)
+# 2006. Count Number of Pairs With Absolute Difference K
+class Solution:
+    def countKDifference(self, nums: List[int], k: int) -> int:
+        # use brute force to check each element
+        ct = 0
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if abs(nums[j]-nums[i]) == k:
+                    ct += 1
+        return ct
