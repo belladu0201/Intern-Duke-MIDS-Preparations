@@ -1852,3 +1852,13 @@ class Solution:
                 if abs(nums[j]-nums[i]) == k:
                     ct += 1
         return ct
+
+#  1662. Check If Two String Arrays are Equivalent
+class Solution:
+    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
+        temp1,temp2  = "",""
+        for i in word1:
+            temp1 += i
+        for j in word2:
+            temp2 += j
+        return temp1 == temp2
