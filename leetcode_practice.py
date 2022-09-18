@@ -1862,3 +1862,15 @@ class Solution:
         for j in word2:
             temp2 += j
         return temp1 == temp2
+
+# 485. Max Consecutive Ones
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        max_ct = ct= 0
+        for i in nums:
+            if i == 1:
+                ct += 1
+            else:
+                max_ct = max(max_ct,ct)
+                ct = 0
+        return max(max_ct,ct)
