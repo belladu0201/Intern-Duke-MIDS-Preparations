@@ -1882,3 +1882,9 @@ class Solution:
             if len([j for j in str(i)]) % 2 == 0:
                 ct += 1
         return ct
+# 2413. Smallest Even Multiple
+class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        if n % 2 == 0:
+            return n
+        return n * 2
