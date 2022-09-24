@@ -1896,3 +1896,13 @@ class Solution:
             output.insert(index[i], nums[i])
             
         return output
+
+# 2180. Count Integers With Even Digit Sum
+class Solution:
+    def countEven(self, num: int) -> int:
+        ct = 0
+        for i in range(1,num+1):
+            if sum([int(j) for j in str(i)]) % 2 == 0:
+                ct += 1
+        return ct
+            
