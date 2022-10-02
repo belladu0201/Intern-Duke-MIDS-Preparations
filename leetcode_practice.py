@@ -1981,3 +1981,14 @@ class Solution:
                 dist.append(d)
         if len(ans) == 0: return -1
         return ans[dist.index(min(dist))]
+
+# 1502. Can Make Arithmetic Progression From Sequence
+class Solution:
+    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
+        arr.sort()
+        # def diff(a,b):
+        #     return b-a
+        sol = []
+        for i in range(len(arr)-1,0,-1):
+            sol.append(arr[i] - arr[i-1])
+        return len(set(sol)) == 1
