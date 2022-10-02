@@ -15,7 +15,7 @@ Therefore, I decided to practice some problems and my noob solutions will be sho
 
 Required Courses       | Resources
 ------------- | -------------
-Data Engineering Systems (IDS 706) |
+Data Engineering Systems (IDS 706) | https://github.com/noahgift/data-engineering-and-dataops
 Introduction to Natural Language Processing (IDS 703) | https://cbail.github.io/ids704/Home.html
 Modeling and Representation of Data (IDS 702) |
 Unifying Data Science (IDS 701) |
