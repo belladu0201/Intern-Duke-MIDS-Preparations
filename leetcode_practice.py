@@ -1992,3 +1992,22 @@ class Solution:
         for i in range(len(arr)-1,0,-1):
             sol.append(arr[i] - arr[i-1])
         return len(set(sol)) == 1
+
+# 1790. Check if One String Swap Can Make Strings Equal
+class Solution:
+    def areAlmostEqual(self, s1: str, s2: str) -> bool:
+        # if len(s1) != len(s2): return False
+        temp = {}
+        ct = 0
+        for i in range(len(s1)):
+            if s1[i] != s2[i]:
+                ct += 1
+                if s1[i] not in temp:
+                    temp[s1[i]] = s2[i]
+                # else:
+                #     temp[s1[i]] += s2[i]
+                
+        print(temp)
+        if ct > 2: return False
+  
+        return list(temp.keys())[::-1] == list(temp.values())
