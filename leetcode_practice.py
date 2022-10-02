@@ -2039,3 +2039,14 @@ class Solution:
                     ct += 1
                     flowerbed[i] = 1
         return ct >= n
+
+# 169. Majority Element
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        hash_table = {}
+        for i in nums:
+            if i not in hash_table:
+                hash_table[i] = 1
+            else:
+                hash_table[i] += 1
+        return max(hash_table, key = hash_table.get)
