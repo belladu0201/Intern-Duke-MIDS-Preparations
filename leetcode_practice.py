@@ -1969,3 +1969,15 @@ class Solution:
 #                 nums = nums[:-3]
 #         return max(ans)
         
+# 1779. Find Nearest Point That Has the Same X or Y Coordinate
+class Solution:
+    def nearestValidPoint(self, x: int, y: int, points: List[List[int]]) -> int:
+        ans = []
+        dist = []
+        for i in range(len(points)):
+            if points[i][0] == x or points[i][1] == y:
+                ans.append(i)
+                d = abs(points[i][0] - x) + abs(points[i][1] - y)
+                dist.append(d)
+        if len(ans) == 0: return -1
+        return ans[dist.index(min(dist))]
