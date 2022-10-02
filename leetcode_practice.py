@@ -1926,3 +1926,11 @@ class Solution:
             temp.pop(idx[i])
             ans.append(int("".join(temp)))
         return str(max(ans))
+
+# 1491. Average Salary Excluding the Minimum and Maximum Salary
+class Solution:
+    def average(self, salary: List[int]) -> float:
+        ct = len(salary) - 2
+        salary.sort()
+        return sum(salary[1:-1]) / ct
+        
