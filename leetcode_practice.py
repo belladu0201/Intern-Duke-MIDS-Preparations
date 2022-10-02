@@ -1915,3 +1915,14 @@ class Solution:
                 if matrix[i][j] != matrix[i+1][j+1]:
                     return False
         return True
+# 2259. Remove Digit From Number to Maximize Result
+class Solution:
+    def removeDigit(self, number: str, digit: str) -> str:
+        idx = [i for i in range(len(number)) if number[i] == digit]
+        if len(idx) == 0: return number
+        ans = []
+        for i in range(len(idx)):
+            temp = list(number)
+            temp.pop(idx[i])
+            ans.append(int("".join(temp)))
+        return str(max(ans))
