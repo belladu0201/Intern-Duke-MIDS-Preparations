@@ -1915,6 +1915,7 @@ class Solution:
                 if matrix[i][j] != matrix[i+1][j+1]:
                     return False
         return True
+        
 # 2259. Remove Digit From Number to Maximize Result
 class Solution:
     def removeDigit(self, number: str, digit: str) -> str:
@@ -1933,4 +1934,15 @@ class Solution:
         ct = len(salary) - 2
         salary.sort()
         return sum(salary[1:-1]) / ct
-        
+
+# 191. Number of 1 Bits
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        temp = 0
+        while (n!=0):
+            # in here, we flip the 1s to 0s and count the times we flip
+            temp += 1
+            # n&=5 --> n = n & 5
+            n &= (n-1)
+            print([n])
+        return temp
