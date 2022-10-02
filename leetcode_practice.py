@@ -2026,3 +2026,16 @@ class Solution:
         for i in range(len(arr)-1, -1,-1):
             max_val,arr[i] = max(max_val,arr[i]), max_val
         return arr
+# 605. Can Place Flowers
+class Solution:
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+        ct = 0
+        # add a dummy head and dummy tail
+        flowerbed = [0] + flowerbed
+        flowerbed = flowerbed + [0]
+        for i in range(1,len(flowerbed)-1):
+            if flowerbed[i-1] == 0 and flowerbed[i+1] == 0:
+                if flowerbed[i] == 0:
+                    ct += 1
+                    flowerbed[i] = 1
+        return ct >= n
