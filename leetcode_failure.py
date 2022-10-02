@@ -210,3 +210,19 @@ class Solution:
             #print(boxTypes[boxTypes[stop[-1]] + 1])
             #output += (truckSize - ct) * (boxTypes[boxTypes[stop[-1] + 1]][1])
         return output
+
+# 976. Largest Perimeter Triangle
+class Solution:
+    def largestPerimeter(self, nums: List[int]) -> int:
+        nums.sort()
+        ans = []
+        while len(nums) >= 3:
+            # print(nums[1] + nums[2] < nums[0])
+            temp = nums[-3:]
+            if (temp[1] + temp[2] > temp[0] and  temp[2] - temp[1] < temp[0]) == False:
+                ans.append(0)
+                nums = nums[:-3]
+            else:
+                ans.append(sum(temp))
+                nums = nums[:-3]
+        return max(ans)
