@@ -2011,3 +2011,18 @@ class Solution:
         if ct > 2: return False
   
         return list(temp.keys())[::-1] == list(temp.values())
+
+# 1299. Replace Elements with Greatest Element on Right Side
+class Solution:
+    def replaceElements(self, arr: List[int]) -> List[int]:
+        ### The code below has time exceeds limit problem ###
+        # for i in range(len(arr)-1):
+        #     temp = arr[i]
+        #     if max(arr[i:]) >= temp:
+        #         arr[i] = max(arr[i+1:])
+        # arr[-1] = -1
+        # return arr
+        max_val = -1
+        for i in range(len(arr)-1, -1,-1):
+            max_val,arr[i] = max(max_val,arr[i]), max_val
+        return arr
