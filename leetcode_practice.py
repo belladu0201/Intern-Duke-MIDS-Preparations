@@ -2050,3 +2050,12 @@ class Solution:
             else:
                 hash_table[i] += 1
         return max(hash_table, key = hash_table.get)
+
+# 448. Find All Numbers Disappeared in an Array
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        full_lst = [i for i in range(1,len(nums) + 1)]
+
+#         return [i for i in full_lst if i not in nums]
+        nums.sort()
+        return list(set(full_lst).difference(set(nums)))
