@@ -2059,3 +2059,19 @@ class Solution:
 #         return [i for i in full_lst if i not in nums]
         nums.sort()
         return list(set(full_lst).difference(set(nums)))
+
+
+# 1189. Maximum Number of Balloons
+class Solution:
+    def maxNumberOfBalloons(self, text: str) -> int:
+        hash_set = {'b':0,'a':0,'l':0,'o':0,'n':0}
+        
+        for i in text:
+            if i in hash_set:
+                hash_set[i] += 1
+        double = min(hash_set['l'], hash_set['o'])
+        single =  min(min(hash_set['b'], hash_set['a'], hash_set['n']),double // 2)
+        print(hash_set)
+        return single
+        # find the largest common number in l and o key
+        # and check if b a and n : has the number / 2ß
