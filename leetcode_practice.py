@@ -2075,3 +2075,13 @@ class Solution:
         return single
         # find the largest common number in l and o key
         # and check if b a and n : has the number / 2ß
+# 2367. Number of Arithmetic Triplets
+class Solution:
+    def arithmeticTriplets(self, nums: List[int], diff: int) -> int:
+        # l,r = 0,1
+        n = len(nums)
+        ct = 0
+        for i in range(n):
+            if nums[i] + diff in nums and nums[i] + 2*diff in nums:
+                ct += 1
+        return ct
