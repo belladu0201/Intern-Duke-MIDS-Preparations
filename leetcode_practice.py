@@ -2085,3 +2085,20 @@ class Solution:
             if nums[i] + diff in nums and nums[i] + 2*diff in nums:
                 ct += 1
         return ct
+# 821. Shortest Distance to a Character
+class Solution:
+    def shortestToChar(self, s: str, c: str) -> List[int]:
+        idx = []
+        res = []
+        for i in range(len(s)):
+            if s[i] == c:
+                idx.append(i)
+        for i in range(len(s)):
+            temp = 100000
+            for j in idx:
+                if j - i < temp:
+                    temp  = abs(j-i)
+            res.append(temp)
+        return res
+            
+        
