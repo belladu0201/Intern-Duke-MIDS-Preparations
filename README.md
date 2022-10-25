@@ -17,8 +17,8 @@ Required Courses       | Resources
 ------------- | -------------
 Data Engineering Systems (IDS 706) | https://github.com/noahgift/data-engineering-and-dataops
 Introduction to Natural Language Processing (IDS 703) | https://cbail.github.io/ids704/Home.html
-Modeling and Representation of Data (IDS 702) |
-Unifying Data Science (IDS 701) |
+Modeling and Representation of Data (IDS 702) | https://ids702-f21.olanrewajuakande.com/
+Unifying Data Science (IDS 701) | https://www.unifyingdatascience.org/html/index.html
 Principles of Machine Learning (IDS 705) | https://kylebradbury.github.io/ids705_sp2019/
 Data Ethics (IDS 704) |
 Data Logic, Visualization, and Storytelling (IDS 707) |
@@ -36,7 +36,7 @@ BIOSTAT 713: Survival Analysis |
 BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 CS 671D: Theory and Algorithms for Machine Learning |
 ECE 661: Computer Engineering Machine Learning and Deep Neural Nets |
-IDS 721: Data Analysis at Scale in Cloud |
+IDS 721: Data Analysis at Scale in Cloud | https://github.com/noahgift/cloud-data-analysis-at-scale
 
 # Data Science/Analytics Skills
 * Linear Algebra
@@ -65,6 +65,15 @@ FITZPATRICK SCHICIANO B 1466 | MW 17:15 - 18:30 | Introduction to Natural Langua
 Gross Hall 103 | MW 13:45 - 15:00 | Data Engineering Systems (IDS 706) | 3 units | https://github.com/noahgift/data-engineering-and-dataops
 Gross Hall 270 | TuTh 13:45 - 15:00 | Practicing Data Science: Tools (IDS 720) | 3 units | https://www.practicaldatascience.org/html/index.html
 Gross Hall 270 | MW 10:15 - 11:30 | Modeling and Representation of Data (IDS702) | 3units | https://ids702-f21.olanrewajuakande.com/
+Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Workshop (IDS 898) | 0.5 unit
+Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
+
+All of the classes in Spring 2023 is in this time frame: 2023/01/11 - 2023/04/19
+Location | Spring 2023 Schedule| Courses | Units | Websites/Resources
+------------- | ------------ | ------------ | ------------ | ------------
+Gross Hall 107 | W 15:30 - 18:00 | DATA ANALYSIS SCALE IN CLOUD (IDS 721) | 3 units | https://github.com/noahgift/cloud-data-analysis-at-scale
+Gross Hall 270 | TuTh 13:45 - 15:00 | UNIFYING DATA SCIENCE (IDS 701) | 3 units | https://www.unifyingdatascience.org/html/index.html
+Gross Hall 270 | TuTh 10:15 - 11:30 | PRINCIPLES OF MACHINE LEARNING (IDS705) | 3units | https://kylebradbury.github.io/ids705/index.html
 Gross Hall 270 | F 13:45 - 16:15 | Master in Interdisciplinary Data Science Workshop (IDS 898) | 0.5 unit
 Gross Hall 103 | F 12:00 - 13:15 | Data Science Dialogues (IDS 791) | 0.5 unit
 
