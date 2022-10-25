@@ -2101,4 +2101,48 @@ class Solution:
             res.append(temp)
         return res
             
+  # Solution online that is smart
+class Solution:
+    def shortestToChar(self, s: str, c: str) -> List[int]:
+#         Travelling front to back
+        result = ["*"] * len(s)
+        i, j = 0, 0
+        while i < len(s) and j < len(s):
+            if s[i] == s[j] == c:
+                result[i] = 0
+                i += 1
+                j += 1
+            elif s[i] != c and s[j] == c:
+                result[i] = abs(i-j)
+                i += 1
+            elif s[i] != c and s[j] != c:
+                j += 1
+    
+#         Travelling back to front
+        i = j = len(s) - 1
+        while i >= 0 and j >= 0:
+            if s[i] == s[j] == c:
+                result[i] = 0
+                i -= 1
+                j -= 1
+            elif s[i] != c and s[j] == c:
+                if type(result[i]) == int:
+                    result[i] = min(result[i], abs(i-j))
+                else:
+                    result[i] = abs(i-j)
+                i -= 1
+            elif s[i] != c and s[j] != c:
+                j -= 1
         
+        return result      
+
+
+# 796. Rotate String
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        temp = ["" for i in range(len(s))]
+        for i in range(0,len(s)):
+            temp[i] = s[i:] + s[:i]
+        #temp.append(s[len(s)-1:] + s[:len(s)-1])
+        print(temp)
+        return goal in temp
