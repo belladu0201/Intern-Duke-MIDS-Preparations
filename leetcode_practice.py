@@ -2146,3 +2146,39 @@ class Solution:
         #temp.append(s[len(s)-1:] + s[:len(s)-1])
         print(temp)
         return goal in temp
+
+# 139. Word Break
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        # temp = 0
+        # while temp < len(s):
+        #     for i in wordDict:
+        #         if i == s[:len(i)]:
+        #             temp += len(i)
+        #             s = s[len(i):]
+        # print(temp)
+        # return temp
+        # return s[temp:] in wordDict
+        # while len(s) > 0 :
+        #     print(True)
+        #     for i in wordDict:
+        #         if i == s[:len(i)]:
+        #             s = s[len(i):]
+        # print([s,'runned'])
+        # return True if len(s) == 1 else False
+        
+        # to make sure this is a set, no duplicate words
+        word = set(wordDict)
+        # make a default dp list and everything is False unless we later on change it to True --> get it to the next index with a new word to check
+        dp = [False] * (len(s) + 1)
+        # we should start from index 0
+        dp[0] = True
+        # loop through every possible length of the string s
+        for i in range(1,len(s) + 1):
+            for j in range(i):
+                # it comtains the combination: 0 1; ,,,; 1 2; 0 2; 0 8; 3 8; ... etc
+                if dp[j] and s[j:i] in word:
+                    dp[i] = True
+                    break
+        print(dp)       
+        return dp[len(s)] # why to check the last index
