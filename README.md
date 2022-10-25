@@ -34,6 +34,9 @@ ECE 682D: Probabilistic Machine Learning |
 STA 601: Bayesian Methods and Modern Statistics |
 BIOSTAT 713: Survival Analysis |
 BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
+CS 671D: Theory and Algorithms for Machine Learning |
+ECE 661: Computer Engineering Machine Learning and Deep Neural Nets |
+IDS 721: Data Analysis at Scale in Cloud |
 
 # Data Science/Analytics Skills
 * Linear Algebra
