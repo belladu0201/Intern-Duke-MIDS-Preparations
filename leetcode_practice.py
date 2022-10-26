@@ -2195,3 +2195,21 @@ class Solution(object):
         for i in range(2,len(cost)+1):
             dp[i] = min(cost[i-1] + dp[i-1],cost[i-2] + dp[i-2])
         return dp[-1]
+
+# 1137. N-th Tribonacci Number
+class Solution(object):
+    def tribonacci(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        dp = [0] *  (n + 1)
+        if n > 2:
+            dp[0] = 0
+            dp[1] = 1
+            dp[2] = 1
+        else: return [0,1,1][n]
+        for i in range(3,n+1):
+            #print([i])
+            dp[i] = dp[i-1] + dp[i-2] + dp[i-3]
+        return dp[n]
