@@ -2073,9 +2073,7 @@ class Solution:
         print(hash_set)
         return single
         # find the largest common number in l and o key
-<<<<<<< HEAD
         # and check if b a and n : has the number / 2
-=======
         # and check if b a and n : has the number / 2ß
 # 2367. Number of Arithmetic Triplets
 class Solution:
@@ -2234,4 +2232,16 @@ class Solution:
         else: return [0,1][n]
         return max(dp)
     # the case of 2 does not work, ok works now
->>>>>>> 0c72fd49f2fbc7f7b071a12d0334fbc491e720d6
+# 198. House Robber
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if not nums: return 0
+        N = len(nums)
+        dp = [0] * (len(nums) + 1)
+        
+        dp[N-1] = nums[N-1]
+        
+        for i in range(N-2,-1,-1):
+            dp[i] = max(dp[i+1],dp[i+2]+nums[i])
+            
+        return dp[0]
