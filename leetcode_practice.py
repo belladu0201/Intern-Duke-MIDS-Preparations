@@ -2065,7 +2065,6 @@ class Solution:
 class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:
         hash_set = {'b':0,'a':0,'l':0,'o':0,'n':0}
-        
         for i in text:
             if i in hash_set:
                 hash_set[i] += 1
@@ -2074,6 +2073,9 @@ class Solution:
         print(hash_set)
         return single
         # find the largest common number in l and o key
+<<<<<<< HEAD
+        # and check if b a and n : has the number / 2
+=======
         # and check if b a and n : has the number / 2ß
 # 2367. Number of Arithmetic Triplets
 class Solution:
@@ -2232,3 +2234,4 @@ class Solution:
         else: return [0,1][n]
         return max(dp)
     # the case of 2 does not work, ok works now
+>>>>>>> 0c72fd49f2fbc7f7b071a12d0334fbc491e720d6
