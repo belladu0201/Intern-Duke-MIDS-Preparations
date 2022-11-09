@@ -2245,3 +2245,19 @@ class Solution:
             dp[i] = max(dp[i+1],dp[i+2]+nums[i])
             
         return dp[0]
+# 1544. Make The String Great
+class Solution:
+    def makeGood(self, s: str) -> str:  
+        while len(s) > 1:
+            find = False
+            
+            for i in range(len(s)-1):
+                curr,next_ = s[i],s[i+1]
+                
+                if abs(ord(curr) - ord(next_)) == 32:
+                    s = s[:i] + s[i+2:]
+                    find = True
+                    break
+            if not find:
+                break
+        return s
