@@ -2274,3 +2274,12 @@ class Solution(object):
         for i in temp:
             idx.append(heights.index(i))
         return [names[j] for j in idx]
+# 1816. Truncate Sentence
+class Solution(object):
+    def truncateSentence(self, s, k):
+        """
+        :type s: str
+        :type k: int
+        :rtype: str
+        """
+        return ' '.join(s.split(' ')[:k])
