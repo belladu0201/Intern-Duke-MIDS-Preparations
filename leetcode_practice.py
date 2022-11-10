@@ -2261,3 +2261,16 @@ class Solution:
             if not find:
                 break
         return s
+# 2418. Sort the People
+class Solution(object):
+    def sortPeople(self, names, heights):
+        """
+        :type names: List[str]
+        :type heights: List[int]
+        :rtype: List[str]
+        """
+        temp = sorted(heights)[::-1]
+        idx = []
+        for i in temp:
+            idx.append(heights.index(i))
+        return [names[j] for j in idx]
