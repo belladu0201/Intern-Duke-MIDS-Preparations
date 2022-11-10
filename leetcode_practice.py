@@ -2317,3 +2317,21 @@ class Solution(object):
                     if (abs(arr[i] - arr[j]) <= a) & (abs(arr[j] - arr[k]) <= b) & (abs(arr[i] - arr[k]) <= c):
                         ct += 1
         return ct
+
+## 1133. Largest Unique Number
+class Solution:
+    def largestUniqueNumber(self, nums: List[int]) -> int:
+        nums.sort()
+        nums = nums[::-1]
+        temp = {}
+        for i in nums:
+            if i not in temp:
+                temp[i] = 1
+            else:
+                temp[i] += 1
+                
+        for k,v in temp.items():
+            if v == 1:
+                return k
+        return -1
+            
