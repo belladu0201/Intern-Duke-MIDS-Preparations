@@ -2334,4 +2334,12 @@ class Solution:
             if v == 1:
                 return k
         return -1
-            
+# 1991. Find the Middle Index in Array
+class Solution:
+    def findMiddleIndex(self, nums: List[int]) -> int:
+        for i in range(len(nums)):
+            l = nums[:i]
+            r = nums[i+1:]
+            if sum(l) == sum(r):
+                return i
+        return -1         
