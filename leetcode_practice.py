@@ -2283,3 +2283,20 @@ class Solution(object):
         :rtype: str
         """
         return ' '.join(s.split(' ')[:k])
+# 1684. Count the Number of Consistent Strings
+class Solution(object):
+    def countConsistentStrings(self, allowed, words):
+        """
+        :type allowed: str
+        :type words: List[str]
+        :rtype: int
+        """
+        nums = 0
+        for i in words:
+            ct = 0
+            for j in i:
+                if j in allowed:
+                    ct += 1
+            if ct == len(i):
+                nums += 1
+        return nums
