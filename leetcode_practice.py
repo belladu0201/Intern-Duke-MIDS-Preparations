@@ -2343,3 +2343,26 @@ class Solution:
             if sum(l) == sum(r):
                 return i
         return -1         
+# 1672. Richest Customer Wealth
+class Solution(object):
+    def maximumWealth(self, accounts):
+        """
+        :type accounts: List[List[int]]
+        :rtype: int
+        """
+        return max([sum(i) for i in accounts])
+# 1342. Number of Steps to Reduce a Number to Zero
+class Solution(object):
+    def numberOfSteps(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        ct = 0
+        while num!=0:
+            if num % 2 == 0:
+                num /=2
+            else:
+                num -=1
+            ct +=1
+        return ct
