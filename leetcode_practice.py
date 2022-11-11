@@ -2366,3 +2366,35 @@ class Solution(object):
                 num -=1
             ct +=1
         return ct
+
+# 876. Middle of the Linked List
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def middleNode(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        temp = head
+        ct = 1
+        while temp.next!= None:
+            temp = temp.next
+            ct += 1
+        for i in range(ct // 2):
+            head = head.next
+        return head
+#         output = head
+#         if ct % 2 == 0:
+#             for i in range(ct // 2):
+#                 head = head.next
+#             return head
+#         else:
+#             for i in range((ct) // 2):
+#                 output = output.next
+#             return output
+            
+        
