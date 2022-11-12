@@ -2414,3 +2414,19 @@ class Solution:
             if sum(weight[:i+1]) <= max_weight:
                 ct +=1
         return ct
+
+
+# 2164. Sort Even and Odd Indices Independently
+class Solution:
+    def sortEvenOdd(self, nums: List[int]) -> List[int]:
+        output = []
+        lst1 = sorted([nums[i] for i in range(0,len(nums),2)])
+        lst2 = sorted([nums[i] for i in range(1,len(nums),2)])[::-1]
+        for i in range(min(len(lst1),len(lst2))):
+            output.append(lst1[i])
+            output.append(lst2[i])
+        if len(lst1) > len(lst2):
+            output.append(lst1[-1])
+        if len(lst2) > len(lst1):
+            output.append(lst2[-1])
+        return output
