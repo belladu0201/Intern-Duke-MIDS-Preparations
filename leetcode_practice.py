@@ -2398,3 +2398,19 @@ class Solution(object):
 #             return output
             
         
+# 1196. How Many Apples Can You Put into the Basket
+class Solution:
+    def maxNumberOfApples(self, weight: List[int]) -> int:
+        max_weight = 5000
+        ct = 0
+        weight.sort()
+        # summ = weight[0]
+        # while summ < max_weight:
+        #     ct += 1
+        #     weight = weight[1:]
+        #     summ += weight[0]
+        # return ct
+        for i in range(len(weight)):
+            if sum(weight[:i+1]) <= max_weight:
+                ct +=1
+        return ct
