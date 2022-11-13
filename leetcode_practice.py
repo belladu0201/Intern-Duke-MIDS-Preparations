@@ -2430,3 +2430,17 @@ class Solution:
         if len(lst2) > len(lst1):
             output.append(lst2[-1])
         return output
+
+# 2073. Time Needed to Buy Tickets
+class Solution:
+    def timeRequiredToBuy(self, tickets: List[int], k: int) -> int:
+        ct = 0
+        while True:
+            for i in range(len(tickets)):
+                if tickets[i] > 0:
+                    ct += 1
+                    tickets[i] -=1
+                else:
+                    continue
+                if tickets[k] == 0:
+                    return ct
