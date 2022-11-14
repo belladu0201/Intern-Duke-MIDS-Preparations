@@ -2481,3 +2481,20 @@ class Solution:
             #print([len(s) - ct])
             return True
         return False
+
+# 1641. Count Sorted Vowel Strings
+class Solution(object):
+    def countVowelStrings(self, n):
+        """
+        # 1 2 3 4 5
+        # 11 12 13 14 15 / 23 24 25/ 34 35 / 45
+        :type n: int
+        :rtype: int
+        """
+        lst = [1,1,1,1,1]
+        for i in range(1,n):
+            for j in range(1,len(lst)):
+                lst[j] += lst[j-1]
+                
+                
+        return sum(lst)
