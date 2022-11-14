@@ -2461,3 +2461,23 @@ class Solution:
             l = 0
         print(output)
         return len([i for i in output if i == True])
+
+# 2330. Valid Palindrome IV
+class Solution:
+    def makePalindrome(self, s: str) -> bool:
+        l,r = 0,len(s)-1
+        ct = 0
+        while l <= r:
+            if s[l] == s[r]:
+                ct += 1
+            else:
+                pass
+            l+=1
+            r-=1
+        print([len(s),ct])
+        target = len(s) // 2 if len(s) % 2== 0 else len(s) //2 + 1
+        print((target))
+        if (target - ct) in [0,1,2]:
+            #print([len(s) - ct])
+            return True
+        return False
