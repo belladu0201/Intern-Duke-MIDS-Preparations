@@ -2444,3 +2444,20 @@ class Solution:
                     continue
                 if tickets[k] == 0:
                     return ct
+# 1385. Find the Distance Value Between Two Arrays
+class Solution:
+    def findTheDistanceValue(self, arr1: List[int], arr2: List[int], d: int) -> int:
+        # if len(arr2) < len(arr1):
+        #     arr2,arr1 = arr1,arr2
+        l,r = 0, len(arr2)
+        output = []
+        for i in range(len(arr1)):
+            temp = []
+            while l < r :
+                temp.append(abs(arr1[i] - arr2[l]) > d)
+                l +=1
+            #output.append(temp)
+            output.append(all([i for i in temp]))
+            l = 0
+        print(output)
+        return len([i for i in output if i == True])
