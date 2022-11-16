@@ -373,3 +373,12 @@ SELECT user_id,CONCAT(UPPER(LEFT(name,1)), LOWER(RIGHT(name, LENGTH(name) - 1)))
 as name
 FROM Users
 ORDER BY user_id
+
+
+
+-- 1251. Average Selling Price
+# Write your MySQL query statement below
+SELECT Prices.product_id, Round(sum(price * units) / sum(units),2) as average_price FROM Prices
+Left Join UnitsSold
+On Prices.product_id = UnitsSold.product_id and UnitsSold.purchase_date between start_date and end_date
+GROUP BY Prices.product_id
