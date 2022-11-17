@@ -2498,3 +2498,13 @@ class Solution(object):
                 
                 
         return sum(lst)
+
+
+# 258. Add Digits
+class Solution:
+    def addDigits(self, num: int) -> int:
+        if len(str(num)) == 1:
+            return num
+        else:
+            num = sum([int(i) for i in str(num)])
+            return self.addDigits(num)
