@@ -382,3 +382,12 @@ SELECT Prices.product_id, Round(sum(price * units) / sum(units),2) as average_pr
 Left Join UnitsSold
 On Prices.product_id = UnitsSold.product_id and UnitsSold.purchase_date between start_date and end_date
 GROUP BY Prices.product_id
+
+-- 1873. Calculate Special Bonus
+# Write your MySQL query statement below
+Select employee_id,salary as bonus from Employees
+Where employee_id % 2 <> 0 and name not like "M%"
+Union
+Select employee_id,0 as bonus from Employees
+Where employee_id % 2 = 0 or  name like "M%"
+order by employee_id;
