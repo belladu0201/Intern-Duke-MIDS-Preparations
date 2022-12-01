@@ -2508,3 +2508,15 @@ class Solution:
         else:
             num = sum([int(i) for i in str(num)])
             return self.addDigits(num)
+
+# 1704. Determine if String Halves Are Alike
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        vowel = ['a','e','i','o','u','A','E','I','O','U']
+        
+        half = len(s) // 2
+        a = s[:half]
+        b = s[half:]
+        num_1 = [True for i in a if i in vowel]
+        num_2 = [True for i in b if i in vowel]
+        return len(num_1) == len(num_2)
