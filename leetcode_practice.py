@@ -2520,3 +2520,15 @@ class Solution:
         num_1 = [True for i in a if i in vowel]
         num_2 = [True for i in b if i in vowel]
         return len(num_1) == len(num_2)
+
+# 2485. Find the Pivot Integer
+class Solution:
+    def pivotInteger(self, n: int) -> int:
+        # 1 --> x and x--> n sum is same
+        if n == 1: return 1
+        lst = [i for i in range(1,n+1)]
+        for i in range(1,n):
+            print([sum(lst[:i]),sum(lst[i-1:])])
+            if sum(lst[:i]) == sum(lst[i-1:]):
+                return i
+        return -1
