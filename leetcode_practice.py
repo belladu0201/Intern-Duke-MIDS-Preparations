@@ -2532,3 +2532,11 @@ class Solution:
             if sum(lst[:i]) == sum(lst[i-1:]):
                 return i
         return -1
+
+# 2481. Minimum Cuts to Divide a Circle
+class Solution:
+    def numberOfCuts(self, n: int) -> int:
+        if n == 1: return 0
+        if n % 2 == 0:
+            return n//2
+        else: return n
