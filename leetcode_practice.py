@@ -2551,3 +2551,10 @@ class Solution:
             start = i
             ct += temp + 1
         return ct
+
+# 1134. Armstrong Number
+class Solution:
+    def isArmstrong(self, n: int) -> bool:
+        num = len([i for i in str(n)])
+        output = sum([int(i) ** num for i in str(n)])
+        return n == output
