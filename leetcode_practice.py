@@ -2540,3 +2540,14 @@ class Solution:
         if n % 2 == 0:
             return n//2
         else: return n
+
+# 1974. Minimum Time to Type Word Using Special Typewriter
+class Solution:
+    def minTimeToType(self, word: str) -> int:
+        ct = 0
+        start = 'a'
+        for i in word:
+            temp  = min(abs(ord(i) - ord(start)), abs(abs(ord(i) - ord(start)) - 26))
+            start = i
+            ct += temp + 1
+        return ct
