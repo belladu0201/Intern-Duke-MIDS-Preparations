@@ -394,3 +394,10 @@ order by employee_id;
 
 -- Select employee_id,salary * (employee_id % 2) * (name not like "M%") as bonus from Employees
 -- order by employee_id
+
+-- 2504. Concatenate the Name and the Profession
+# Write your MySQL query statement below
+select person_id, concat(name, "(", substring(profession,1,1), ")")
+as name 
+from Person
+order by person_id desc
