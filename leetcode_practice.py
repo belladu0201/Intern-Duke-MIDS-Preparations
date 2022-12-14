@@ -2558,3 +2558,85 @@ class Solution:
         num = len([i for i in str(n)])
         output = sum([int(i) ** num for i in str(n)])
         return n == output
+
+# 2500. Delete Greatest Value in Each Row
+class Solution(object):
+    def deleteGreatestValue(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        res = []
+        # while len(grid) > 0:
+        for j in range(len(grid[0])):
+            lst = []
+            for i in range(len(grid)):
+                lst.append(max(grid[i]))
+                grid[i].remove(max(grid[i]))
+            res.append(max(lst))
+            print(res)
+        return sum(res)
+
+# 2496. Maximum Value of a String in an Array
+class Solution(object):
+    def maximumValue(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: int
+        """
+        if strs is None: return 0
+        temp = []
+        for i in strs:
+            if i.isnumeric():
+                temp.append(int(i))
+            else:
+                temp.append(len(i))
+        return max(temp)
+        #return max([len(i) if i.isnumeric() else i for i in strs])
+
+# 2475. Number of Unequal Triplets in Array
+class Solution:
+    def unequalTriplets(self, nums: List[int]) -> int:
+        ct = 0
+        for i in range(len(nums)):
+            for j in range(i, len(nums)):
+                for k in range(j, len(nums)):
+                    if i < j and j < k:
+                        if nums[i] != nums[j] and nums[j] != nums[k] and nums[i] != nums[k]:
+                            ct += 1
+        return ct
+
+# 2469. Convert the Temperature
+class Solution:
+    def convertTemperature(self, celsius: float) -> List[float]:
+        return [celsius + 273.15, celsius* 1.80 + 32.00]
+
+# 2465. Number of Distinct Averages
+class Solution:
+    def distinctAverages(self, nums: List[int]) -> int:
+        lst = []
+        nums.sort()
+        while len(nums) >= 1:
+            res = (nums[0] + nums[-1]) /2
+            print((nums[0] + nums[-1]) / 2)
+            lst.append(res)
+            print(nums, res)
+            nums = nums[1:-1]
+        print(lst)
+        # print(nums)
+        return len(set(lst))
+
+# 2455. Average Value of Even Numbers That Are Divisible by Three
+class Solution(object):
+    def averageValue(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        lst = [i for i in nums if (i % 3 == 0) and (i %2 == 0) and (i != 0)]
+        print(lst)
+        if len(lst) == 0: return 0
+        # if len(lst) ==1: return lst
+        return sum(lst) / len(lst)
+
+# 
