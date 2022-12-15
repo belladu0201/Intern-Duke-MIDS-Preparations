@@ -226,3 +226,25 @@ class Solution:
                 ans.append(sum(temp))
                 nums = nums[:-3]
         return max(ans)
+# 2446. Determine if Two Events Have Conflict
+class Solution(object):
+    def haveConflict(self, event1, event2):
+        """
+        :type event1: List[str]
+        :type event2: List[str]
+        :rtype: bool
+        """
+        print(int(event1[1][:2]))
+        print(int(event2[0][:2]))
+        if int(event2[0][:2]) < int(event1[1][:2]):
+            print("Run1")
+            return True if (int(event2[0][:2]) and int(event1[1][:2]) <= 12) else False
+        elif int(event2[0][:2]) == int(event1[1][:2]):
+            if int(event1[1][-2:]) <= int(event2[0][-2:]):
+                print("Run2")
+                return True
+            print("Run3")
+            return False
+        else:
+            print("Run4")
+            return False
