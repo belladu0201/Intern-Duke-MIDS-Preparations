@@ -248,3 +248,23 @@ class Solution(object):
         else:
             print("Run4")
             return False
+class Solution(object):
+    def haveConflict(self, event1, event2):
+        """
+        :type event1: List[str]
+        :type event2: List[str]
+        :rtype: bool
+        """
+        interval1 = [i for i in range(int(event1[0][:2]), int(event1[1][:2])+ 1)]
+        interval2 = [i for i in range(int(event2[0][:2]), int(event2[1][:2])+ 1)]
+        print(int(event1[1][-2:]))
+        print(int(event1[0][-2:]))
+        print([i for i in interval1 if i in interval2])
+        print(int(event1[1][:2]),event2[0][:2])
+        if (len([i for i in interval1 if i in interval2]) == 1)  and (int(event1[1][:2]) == int(event2[0][:2])): 
+            if int(event1[1][-2:]) < int(event2[0][-2:]): 
+                print([int(event1[1][-2:]), int(event2[0][-2:])])
+                return False
+            return True
+        return len([i for i in interval1 if i in interval2]) > 0
+        # return int(event2[0][:2]) in interval or int(event2[1][:2]) in interval
