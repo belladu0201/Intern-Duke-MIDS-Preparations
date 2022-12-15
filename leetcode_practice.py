@@ -2639,4 +2639,25 @@ class Solution(object):
         # if len(lst) ==1: return lst
         return sum(lst) / len(lst)
 
-# 
+# 2446. Determine if Two Events Have Conflict
+class Solution:
+    def haveConflict(self, event1: List[str], event2: List[str]) -> bool:
+        first = [int(i[:2] + i[-2:]) for i in event1]
+        second = [int(i[:2] + i[-2:]) for i in event2]
+        # first.sort()
+        # second.sort()
+        print(first,second)
+
+        lst = first + second
+        overlap = False
+        for i in lst:
+            if i in first:
+                if i >= second[0] and i <= second[1]:
+                    overlap = True
+            if i in second:
+                if i >= first[0] and i <= first[1]:
+                    overlap = True 
+        return overlap
+
+        print(lst)
+        return first[1] >= second[0] or first[0] <= second[1]
