@@ -2661,3 +2661,23 @@ class Solution:
 
         print(lst)
         return first[1] >= second[0] or first[0] <= second[1]
+
+
+# 2351. First Letter to Appear Twice
+class Solution:
+    def repeatedCharacter(self, s: str) -> str:
+        # temp = {}
+        # for i in s:
+        #     if s not in temp:
+        #         temp[i] = 1
+        #     else:
+        #         temp[i] += 1
+        # return temp.values
+
+        S = set()
+        for i in s:
+            if i in S:
+                return i
+            else:
+                S.add(i)
+        return
