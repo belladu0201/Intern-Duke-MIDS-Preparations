@@ -268,3 +268,32 @@ class Solution(object):
             return True
         return len([i for i in interval1 if i in interval2]) > 0
         # return int(event2[0][:2]) in interval or int(event2[1][:2]) in interval
+
+class Solution(object):
+    def haveConflict(self, event1, event2):
+        """
+        :type event1: List[str]
+        :type event2: List[str]
+        :rtype: bool
+        """
+        interval1 = [i for i in range(int(event1[0][:2]), int(event1[1][:2])+ 1)]
+        interval2 = [i for i in range(int(event2[0][:2]), int(event2[1][:2])+ 1)]
+        overlap = list(set(interval2) & set(interval1))
+        res = []
+        print(overlap)
+        if len(overlap) == 1: 
+            print('run')
+            if int(event1[1][:2]) == int(event2[0][:2]): 
+                print('1case')
+                print(int(event1[1][-2:]) <= int(event2[0][-1:]))
+                res.append(int(event1[1][-2:]) >= int(event2[0][-1:]))
+                # return int(event1[1][-2:]) >= int(event2[0][-1:])
+            elif int(event1[0][:2]) == int(event2[1][:2]): 
+                print('2case')
+
+                res.append(int(event1[0][-2:]) <= int(event2[1][-2:]))
+                # return int(event1[0][-2:]) <= int(event2[1][-2:])
+            if len(res) == 1: return res
+        print(res)
+            # return res[0] or res[1]
+        return overlap
