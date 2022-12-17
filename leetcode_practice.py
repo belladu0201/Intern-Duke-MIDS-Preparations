@@ -2735,3 +2735,13 @@ class Solution:
         for i in range(len(nums) - 1):
             total.append(sum(nums[i:i+2]))
         return len(total) != len(list(set(total)))
+
+# 2357. Make Array Zero by Subtracting Equal Amounts
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        ct = 0
+        while nums != [0 for i in range(len(nums))]:
+            minus = [i for i in nums if i != 0]
+            nums = [i - min(minus) for i in nums if i > 0]
+            ct += 1
+        return ct
