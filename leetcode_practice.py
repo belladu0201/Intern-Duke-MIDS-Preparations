@@ -2708,3 +2708,22 @@ class Solution:
             if (a % i == 0) and (b % i == 0):
                 t += 1
         return t
+
+# 2404. Most Frequent Even Element
+class Solution:
+    def mostFrequentEven(self, nums: List[int]) -> int:
+        count = {}
+        for i in nums:
+            if i % 2 == 0:
+                if i not in count:
+                    count[i] = 1
+                else:
+                    count[i] += 1
+        if count:
+            val = (max(sorted(count.values())))
+            temp = []
+            for i in count:
+                if count[i] == val:
+                    temp.append(i)
+            return min(temp)
+        return -1
