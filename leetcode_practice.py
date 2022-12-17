@@ -2727,3 +2727,11 @@ class Solution:
                     temp.append(i)
             return min(temp)
         return -1
+
+# 2395. Find Subarrays With Equal Sum
+class Solution:
+    def findSubarrays(self, nums: List[int]) -> bool:
+        total = []
+        for i in range(len(nums) - 1):
+            total.append(sum(nums[i:i+2]))
+        return len(total) != len(list(set(total)))
