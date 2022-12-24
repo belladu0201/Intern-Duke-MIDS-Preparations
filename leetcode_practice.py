@@ -2745,3 +2745,72 @@ class Solution:
             nums = [i - min(minus) for i in nums if i > 0]
             ct += 1
         return ct
+
+# 2335. Minimum Amount of Time to Fill Cups
+class Solution:
+    def fillCups(self, amount: List[int]) -> int:
+        ct = 0
+        amount.sort()
+        while sum(amount)!= 0:
+            amount[2] -= 1
+            if amount[1] >= 1:
+                amount[1] -= 1
+            ct += 1
+            amount.sort()
+        return ct
+
+        # while amount != [0 for i in amount]:
+        #     for i in range(len(amount)):
+        #         if amount[i] != min(amount) and amount[i] >= 1:
+        #             amount[i] -= 1
+        #             ct += 1
+            
+
+        # def repeat(amount):
+        #     if 0 in amount:
+        #         amount.remove(0)
+        #     if len(amount) >= 1:
+        #         for i in range(len(amount)):
+        #             amount[i] -= 1
+        #             ct += 0.5
+        #     if 
+        #     return 
+        # return repeat(amount)
+                
+
+        # for i in range(len(amount)):
+        #     if amount[i] >= 1 and amount[i] != max(amount):
+        #         amount[i] -= 1
+        #         ct += 0.5
+        # if 0 in amount:
+        #     amount.remove(0)
+        # for i in range(len(amount)):
+        #     if 0 not in amount:
+        #         amount[i] -= 1
+        #         ct += 0.5
+        # # if max(amount) % 2 == 1:
+        # #     ct += max(amount) //2 + 1
+        # # else:
+        # ct +=  max(amount)
+        # ct = int(ct)
+        
+                
+            
+        # temp = min(amount)
+        # want = [i for i in amount if i != temp]
+        # for i in range(len(want)):
+        #     if want[i] >= 1:
+        #         want[i] = want[i] - 1
+        #     ct += 1
+        # ct += min(want)
+        # now = [temp, max(want)]
+
+        # for i in range(len(now)):
+        #     if now[i] >= 1:
+        #         now[i] = now[i] - 1
+        #     ct += 1
+
+        # print(ct, now)
+        # print(ct, amount)
+        # return ct
+        
