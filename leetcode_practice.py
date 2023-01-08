@@ -2822,3 +2822,12 @@ class Solution:
         nums = [i for i in nums if i !=0]
         temp = len([i for i in nums if i > 0])
         return max(temp, len(nums) - temp)
+
+# 2520. Count the Digits That Divide a Number
+class Solution:
+    def countDigits(self, num: int) -> int:
+        ct = 0
+        nums = [i for i in str(num)]
+        for i in nums:
+            if num % int(i) == 0: ct +=1
+        return ct
