@@ -2813,4 +2813,12 @@ class Solution:
         # print(ct, now)
         # print(ct, amount)
         # return ct
-        
+
+
+# HAPPY 2023 #        
+# 2529. Maximum Count of Positive Integer and Negative Integer
+class Solution:
+    def maximumCount(self, nums: List[int]) -> int:
+        nums = [i for i in nums if i !=0]
+        temp = len([i for i in nums if i > 0])
+        return max(temp, len(nums) - temp)
