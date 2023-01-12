@@ -2839,3 +2839,26 @@ class Solution:
     def percentageLetter(self, s: str, letter: str) -> int:
         print(s.count(letter) / len(s) *100)
         return trunc(s.count(letter) / len(s) *100)
+
+# 2264. Largest 3-Same-Digit Number in String
+class Solution:
+    def largestGoodInteger(self, num: str) -> str:
+        temp = []
+        if (len(num) == 3) and (len((set(num))) == 1):
+            return num
+        for i in range(len(num)-2):
+            if len((set(num[i:i+3]))) == 1:
+                temp.append(list(set(num[i:i+3]))[0])
+        if len(temp) == 0: return ""
+        return "".join([max(temp)]*3)
+
+            
+        # for i in num:
+        #     if i not in temp:
+        #         temp[i] = 1
+        #     else:
+        #         temp[i] += 1
+        # lst = [k for k,v in temp.items() if v == 3]
+        # if len(lst) != 0:
+        #     return "".join([max(lst)]*3)
+        # return ""
