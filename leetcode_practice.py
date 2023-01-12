@@ -2862,3 +2862,22 @@ class Solution:
         # if len(lst) != 0:
         #     return "".join([max(lst)]*3)
         # return ""
+
+# 2138. Divide a String Into Groups of Size k
+class Solution(object):
+    def divideString(self, s, k, fill):
+        """
+        :type s: str
+        :type k: int
+        :type fill: str
+        :rtype: List[str]
+        """
+        # temp = [str(s[i:i+k])for i in range(0,len(s)-k+1,3)]
+        # if len(s) % k != 0:
+        #     temp.append(s[-len(s) % k:])
+        # print(temp)
+        while len(s) % k != 0:
+            s += fill
+        res = [str(s[i:i+k]) for i in range(0,len(s)-k+1,k)]
+        print(res)
+        return res
