@@ -2831,3 +2831,11 @@ class Solution:
         for i in nums:
             if num % int(i) == 0: ct +=1
         return ct
+
+
+
+# 2278. Percentage of Letter in String
+class Solution:
+    def percentageLetter(self, s: str, letter: str) -> int:
+        print(s.count(letter) / len(s) *100)
+        return trunc(s.count(letter) / len(s) *100)
