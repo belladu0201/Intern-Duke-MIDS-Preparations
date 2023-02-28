@@ -122,3 +122,9 @@ Erwin Terrance |~| Good location, close to school, but hard to reserve. No apt a
 
 # Personal Expereince (就读体验)
 - Please email me for more information if you are interested in Duke MIDS program and details of my personal experience: beibei.du@duke.edu
+
+## Course Experience
+1. IDS702: covered a lot of statistics concepts (I was a stats major during undergrad) and there are some concepts not even beyond all stats classes that I have taken in undergrad. I don't like R language.
+2. IDS706: Noah is a greater speaker. The workload can be minimal, depending on your choice. Lectures are easy follow if you are not interested into data engineering and cloud stuff.
+3. IDS720: Lots of reading and in-class activities. If you can opt out of this class, I would suggest not taking this class. The final project is a nightmare to me.
+4. IDS703: The lectures are hard to understand. It is very easy to get a good grade and the homeworks are fine. This class shouldn't be a requirement prior to IDS705 (ML).
