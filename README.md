@@ -19,7 +19,7 @@ Data Engineering Systems (IDS 706) | https://github.com/noahgift/data-engineerin
 Introduction to Natural Language Processing (IDS 703) | https://cbail.github.io/ids704/Home.html
 Modeling and Representation of Data (IDS 702) | https://ids702-f21.olanrewajuakande.com/
 Unifying Data Science (IDS 701) | https://www.unifyingdatascience.org/html/index.html
-Principles of Machine Learning (IDS 705) | https://kylebradbury.github.io/ids705_sp2019/
+Principles of Machine Learning (IDS 705) | https://kylebradbury.github.io/ids705/index.html
 Data Ethics (IDS 704) |
 Data Logic, Visualization, and Storytelling (IDS 707) |
 Data Science Dialogues (IDS 791) |
@@ -37,12 +37,14 @@ BIOSTAT 718. Analysis of Correlated and Longitudinal Data |
 CS 671D: Theory and Algorithms for Machine Learning |
 ECE 661: Computer Engineering Machine Learning and Deep Neural Nets |
 IDS 721: Data Analysis at Scale in Cloud | https://github.com/noahgift/cloud-data-analysis-at-scale
+AIPI531 : Deep Reinforcement Learning and Applications | 
 
 # Data Science/Analytics Skills
 * Linear Algebra
 * Probability and Statistics
 * Python and R basics
 * SQL
+* Machine Learning knowledge
 * Case studies and presentation skills
 
 # Key Terms Appeared in Data Analyst Job Roles
@@ -117,3 +119,6 @@ Berkshire Ninth Street | 2400-4800 | Price is a little bit high. Good location, 
 Trinity Commons | 2100-4000 | Good location, but hard to find the good ones. waitlist system.
 Loft | ~ | Low reviews on Google. not sure about this apt
 Erwin Terrance |~| Good location, close to school, but hard to reserve. No apt at all when called in mid March.
+
+# Personal Expereince (就读体验)
+- Please email me for more information if you are interested in Duke MIDS program and details of my personal experience: beibei.du@duke.edu
