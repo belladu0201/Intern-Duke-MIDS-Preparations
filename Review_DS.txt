@@ -1,14 +1,20 @@
 1. SQL: https://mode.com/sql-tutorial/sql-case/
-2. Product sense: 
+
+2. Product sense: https://drive.google.com/file/d/1lUir0sqXLVrIvADNsSTYcCRYvw1IEMXV/view
+
 3. Top asked questions: https://intellipaat.com/blog/interview-question/data-science-interview-questions/?US 
 https://www.springboard.com/blog/data-science/machine-learning-interview-questions/
+
 4. Statistics: https://www.coursera.org/learn/inferential-statistics-intro/lecture/EXe3o/introduction
 https://online.stat.psu.edu/stat200/
 https://online.stat.psu.edu/stat414/
+
 5. Machine Learning: An Introduction to Statistical Learning:With Applications
 https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md
 https://www.youtube.com/user/atihler/videos
 https://github.com/dibgerge/ml-coursera-python-assignments
 https://medium.com/machine-learning-101
+
 6. A/B Testing: Lean Analytics
+
 7. Data Structures & Algo: https://drive.google.com/file/d/1_M96LwkqilMIkbb1U7YE2sqM1iZP4MyV/view
