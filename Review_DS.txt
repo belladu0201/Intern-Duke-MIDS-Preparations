@@ -16,5 +16,11 @@ https://github.com/dibgerge/ml-coursera-python-assignments
 https://medium.com/machine-learning-101
 
 6. A/B Testing: Lean Analytics
+https://www.youtube.com/watch?v=DUNk4GPZ9bw
 
 7. Data Structures & Algo: https://drive.google.com/file/d/1_M96LwkqilMIkbb1U7YE2sqM1iZP4MyV/view
+
+Useful Website:
+1. InterviewQuery
+2. https://www.stratascratch.com/
+3. IntervewBit
