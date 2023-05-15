@@ -1,4 +1,4 @@
-# Intern-Preparations
+# Duke MIDS/Job-Preparations
 I am studying at Duke MIDS(Master in Interdisciplinary Data Science) at Duke University and to be ready for interviews and interns.
 <img width="673" alt="Screen Shot 2023-05-14 at 9 13 05 PM" src="https://github.com/belladu0201/Intern-Duke-MIDS-Preparations/assets/60382493/a1603d36-4d4f-4c6e-9779-690911241ebc">
 
