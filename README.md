@@ -1,5 +1,7 @@
 # Intern-Preparations
-I am going to study MIDS(Master in Interdisciplinary Data Science) at Duke University and to be ready for interviews and interns.
+I am studying at Duke MIDS(Master in Interdisciplinary Data Science) at Duke University and to be ready for interviews and interns.
+<img width="673" alt="Screen Shot 2023-05-14 at 9 13 05 PM" src="https://github.com/belladu0201/Intern-Duke-MIDS-Preparations/assets/60382493/a1603d36-4d4f-4c6e-9779-690911241ebc">
+
 This program is raltively new and I will prepare for the industy here to record my path.
 Therefore, I decided to practice some problems and my noob solutions will be shown here. 
 - In `Hackerrank_interviewprep.py` this file, it includes my solution to 3 Months HackerRank Interview Preparation Kits. Although I am pretty new to the job search in the field of Data Science/Analytics, I would assume the Python basics are necessary for the interviews :) hopefully I can get some.
