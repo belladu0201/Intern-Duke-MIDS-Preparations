@@ -95,22 +95,27 @@ Name | Courses teach | Websites | Research Topics | Publications
  Fall 2022 | 8/29/2022 | 12/02/2022 | 40days
  Spring 2023 | 01/11/2023 | 04/19/2023 |
  #### Questions to consider before entering Duke
- * Fall Classes (Does everyone take the same classes? skip Intro. to NLP for Fall?)
- Answer: Yes. I have listed the first semester class above. IDS720 is optional, need to take test in bootcamp to see if required.
- * Class size for class of 2024? (male vs. female, avg. age)
+ * Fall Classes (Does everyone take the same classes? Skip Intro. to NLP for Fall?)
+ Answer: Yes. I have listed the first-semester class above. IDS720 is optional, need to take the test in bootcamp to see if required.
+ * Class size for the class of 2024? (male vs. female, avg. age)
  Answer: Don't know for now. Everything will be known until 4/15.
  * Electives (taking ECE/BIOSTAT/STAT)
- Answer: Will ask once arrived Duke.
+ Answer: Will ask once arrive at Duke.
  * Career Service (when to prepare and what to expect in bootcamp?)
- Answer: workshop will prepare everything.
+ Answer: the workshop will prepare everything.
  * Workload? 10+hrs/3units course?
- Answer: Students mentioning workload for 4 courses is pretty heavy.
+ Answer: Students mentioned that the workload for 4 courses is pretty heavy.
 
 
 ## Course Experience from past students
-- IDS706: Using AWS, need self-learning, complicated, easy to get A
-- IDS702: linear regression，logistic regression，missing data，panel data/ hierarchical model, lots of homework and care about the grading
-- IDS703: very hard for non-cs/stats students, need to calculate markov chain using best data structure, build neural network using pytorch
+- IDS706: Using AWS, needs self-learning, complicated, easy to get A, changes made since FALL 2023
+- IDS702: linear regression， logistic regression， missing data， panel data/ hierarchical model, lots of homework, and care about the grading
+- IDS703: very hard for non-cs/stats students, need to calculate Markov chain using a best data structure, build a neural network using PyTorch
+- IDS721: Easy to get good grades. Practical in industry for DE. (Easy to get A, small workload)
+- AIPI531: Easy to get A, lecture materials are actually hard. HWs are short and ok without any ML/DL background. Good for ML
+- IDS701: A/B Testing and Causal Inference class. I dislike this class but a good class for product analytics DS. I recommend reading the textbook from this class instead.
+- IDS705: I love the Professor (Kyle) and the content covered is comprehensive and not too deep. Good for MLE/DS interview preparation.
+- IDS707/IDS704: In Progress
 
 # Duke University Housing
 Name    | Price Range | More
